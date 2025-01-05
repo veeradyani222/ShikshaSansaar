@@ -1,0 +1,54 @@
+.blogs-container {
+    margin-top: 2vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    place-items: center;
+}
+.blog-heading{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    font-size: 3vh;
+    align-items: center;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page-button {
+    background-color: #f0f0f0;
+    border: none;
+    margin: 0 5px;
+    padding: 12px 20px; /* Increased padding for better touch targets */
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px; /* Rounded corners for buttons */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.page-button.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.page-button:hover:not(.disabled) {
+    background-color: #ff884d; /* Hover effect only for enabled buttons */
+}
+
+.page-button svg {
+    margin-right: 5px;
+}
+
+
+@media screen and (max-width: 480px) {
+    .blogs-container {
+        grid-template-columns: repeat(2, 1fr); /* Adjusts to 2 columns on smaller screens */
+    }
+}
+
+

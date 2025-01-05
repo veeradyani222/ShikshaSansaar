@@ -1,0 +1,172 @@
+.blog-display {
+    padding: 2vh;
+    width: 80vw; /* Set width to 80% of the viewport width */
+    margin: auto; /* Center the blog display */
+    text-align: left; /* Default text alignment to left */
+  }
+  
+  .blog-title {
+    font-size: 1.5vw; /* Responsive font size for title */
+    margin-bottom: 1vw;
+    text-align: center;
+  }
+  
+  .blog-image {
+    width: 50vw; /* Set width to 50% of viewport width */
+    margin: 0 auto; /* Center the blog image */
+  }
+  
+  .blog-main-image {
+    width: 100%; /* Ensure the image takes full width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  .blog-content-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out the sections */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    margin-top: 10vh;
+  }
+  
+  .left-section {
+    flex: 0 0 70%; /* Take 70% of the width */
+    padding-right: 20px; /* Space between left and right sections */
+    text-align: left; /* Align text to the left for content */
+  }
+  
+  .right-section {
+    flex: 0 0 25%; /* Take 25% of the width */
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    align-items: flex-start; /* Align items to the start */
+  }
+  
+  .blog-content {
+    margin-bottom: 20px; /* Space below the content */
+    text-align: left; /* Default text alignment to left */
+  }
+  
+  .blog-date {
+    font-size: 1.5vw; /* Smaller font for date */
+    color: gray; /* Gray color for date text */
+  }
+  
+  /* Social icons styling */
+  .social-icons {
+    display: flex; /* Use flexbox for social icons */
+    flex-direction: column;
+; /* Space between icons */
+    margin-bottom: 15px; /* Space below social icons */
+  }
+  .social-icons .icons {
+    display: flex; /* Use flexbox for social icons */
+    gap: 1vh; /* Space between icons */
+    margin-bottom: 15px; /* Space below social icons */
+  }
+  
+  .social-icon {
+    font-size: 1.5vw; /* Icon size */
+    color: #000; /* Icon color */
+    transition: color 0.3s; /* Transition for hover effect */
+  }
+  
+  .social-icon:hover {
+    color: orangered; /* Change color on hover */
+  }
+  
+  /* Tags section styling */
+  .tags-section {
+    display: flex; /* Use flexbox for tags */
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 5px; /* Space between tags */
+    margin-bottom: 20px; /* Space below tags */
+  }
+  
+  .blog-tag {
+    background-color: #f1f1f1; /* Tag background color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Padding for tags */
+    font-size: 0.9em; /* Tag font size */
+  }
+  
+  .pro-library {
+    font-weight: bold; /* Bold text for Pro-Library */
+    font-size: 2vw; /* Slightly larger font size */
+    margin-top: auto; /* Push it to the bottom of the right section */
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 480px) {
+    .blog-display {
+      padding: 2vw; /* Adjust padding for smaller screens */
+      width: 90vw; /* Use a wider width on smaller screens */
+      text-align: center; /* Center text within the blog display */
+    }
+  
+    .blog-title {
+      font-size: 1.5vh; /* Larger font size for title on small screens */
+      margin-bottom: 1vh; /* More margin below the title */
+    }
+  
+    .blog-image {
+      width: 80vw; /* Use full width on smaller screens */
+      margin: 0 auto; /* Center the blog image */
+    }
+  
+    .blog-content-container {
+      flex-direction: column; /* Stack sections vertically */
+      align-items: center; /* Center all items */
+    }
+  
+    .left-section {
+      flex: 0 0 100%; /* Take full width on smaller screens */
+      padding-right: 0; /* Remove right padding */
+      text-align: center; /* Center text in left section */
+    }
+  
+    .right-section {
+      flex: 0 0 100%; /* Take full width on smaller screens */
+      align-items: center; /* Center items in the right section */
+    }
+  
+    .blog-content {
+      text-align: center; /* Center text */
+    }
+  
+    .blog-date {
+        font-size: 3vh; /* Larger font size for date on small screens */
+        margin-bottom: 2vh;
+      }
+
+      .social-icons {
+margin-top: 10vw;
+    }
+    .social-icons  .icons {
+       display: flex;
+       justify-content: center;
+       gap: 10vw;
+            }
+
+  
+    /* Adjust social icons size for smaller screens */
+    .social-icon {
+      font-size: 5vh; /* Smaller icon size */
+    }
+  
+    /* Adjust tag font size for smaller screens */
+    .blog-tag {
+      font-size: 0.8em; /* Smaller font size for tags */
+    }
+  
+    .pro-library {
+        font-size: 3vh;
+        margin-top: 2vh;
+    }
+
+    .tags-section {
+        display: flex;
+      justify-content: center;
+    }
+  }
+  

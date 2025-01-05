@@ -1,0 +1,91 @@
+/* Fullscreen wrapper to center the login form */
+.fullscreen-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background: linear-gradient(135deg, rgba(255, 105, 180, 0.7), rgba(0, 191, 255, 0.7));
+    backdrop-filter: blur(10px);
+    margin-right: 20vw;
+    padding: 0;
+}
+
+.login-employee-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-employee-container h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.4);
+}
+
+/* Form Styling */
+.login-employee-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Input Styling */
+.login-employee-container input {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    color: #333;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+
+.login-employee-container input:focus {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* Button Styling */
+.login-employee-container button {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background: linear-gradient(45deg, #FF6F00, #FF8C00);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-employee-container button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.login-employee-container button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/* Error Message Styling */
+.login-employee-container p {
+    margin-top: 1rem;
+    color: #ff4d4d;
+    font-weight: bold;
+}

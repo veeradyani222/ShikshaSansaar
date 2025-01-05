@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin : 0vh 0vh;
+  transition: transform 0.3s ease;
+  border: 1px solid black;
+  position: relative;
+  transition: background-color 0.5s ease; /* Smooth transition effect */
+}
+
+.item {
+  position: relative;
+  display: inline-block;
+  overflow: hidden; /* Ensures the background doesn't go outside the item */
+}
+
+.item-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 69, 0, 1);  /* orangey-red with low opacity */
+  color: white; /* White text color */
+  padding: 0.5vh 1vw; /* Adjust padding as needed */
+  font-size: 1.5vh; /* Font size */
+  font-weight: bold;
+  border-bottom-right-radius: 5px; /* Optional: Rounded bottom-right corner */
+  overflow: hidden; /* Ensures shine effect is clipped to the tag */
+  z-index: 10; /* Ensures tag appears above other content */
+  position: relative; /* Set position relative for the shine effect */
+  display: flex; /* Use flexbox */
+  justify-content: flex-start; /* Align items to the left horizontally */
+  align-items: center; /* Align items vertically in the center */
+  text-align: left; /* Ensures text inside is aligned to the left */
+}
+
+
+.item:hover {
+  background-color:rgba(250, 128, 114, 0.3);
+
+}
+.item-above{
+  display: flex;
+  flex-direction: row;
+}
+.item img {
+  width: 10vw;
+  height: 11vw;
+  margin-bottom: 0; 
+  padding: 0; 
+  display: block; 
+}
+
+.item-details {
+  width: 15vw;
+}
+.duration {
+  display: flex;
+  flex-direction: row; /* Align items in a row */
+  align-items: center; /* Center items vertically */
+
+}
+
+.duration p {
+  margin-left: 5px; /* Add some space between the icon and text */
+  font-family: "Poppins", serif; /* Optional: to match your font */
+  font-size: 1.5vh; /* Adjust font size as needed */
+}
+
+.imp-details {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", serif;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+p.item_name {
+  font-family: "Poppins", serif;
+  font-size: 2vh;
+  font-weight: 500;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0vh 0;  
+}
+
+.item_prices {
+  display: flex;
+  flex-direction: row;
+  font-family: "Poppins", serif;
+  font-size: 3vh;
+  font-weight: 600;
+  gap: 0vw;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+.new_price{
+  font-size: 2.5vh;
+  color: rgb(9, 9, 9);
+ 
+}
+.old_price {
+  font-size: 2vh;
+  color: gray;
+  text-decoration: line-through;
+}
+
+.lecturer{
+  color: black;
+  font-weight: 700;
+  font-size: 3.5vh;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.sub-cat{
+  font-size: 2vh;
+  font-family: "Roboto Condensed", sans-serif;
+  padding: 0.5vh 1vh;
+  border: 1px solid black;
+  border-radius: 2vh;
+}
+.other_details_items {
+  display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color: white; /* Fully opaque orangered */
+    border: 1px solid black;
+}
+.heart-button .heart-icon {
+  width: 5vh; /* Set width */
+  height: 5vh; /* Set height */
+  transition: transform 0.3s ease; /* Transition effect for click */
+}
+
+.heart-animation {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  font-size: 1vh;
+  opacity: 1;
+  animation: floatHearts 2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
+
+@keyframes floatHearts {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translateY(-15px); /* Slight upward movement at halfway */
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-30px); /* Finish floating upward */
+  }
+}
+.whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 10px; /* Space between heart icon and WhatsApp icon */
+}
+
+img.whatsapp-icon {
+  color: #000000; /* WhatsApp green color */
+  height: 4.5vh;
+  width: 4.5vh; /* Adjust size as needed */
+  font-weight: 1000;
+}
+
+.review-section-main-item{
+  display: flex;
+  gap: 1vh;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+}
+.review-section-main-item p{
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.tag-item {
+  margin: 0 1vh; /* Space around each tag */
+  padding: 0.5vh 0.5vh; /* Padding inside each tag */
+  border-radius: 1vh; /* Rounded corners */
+  font-size: 1.5vh;
+  text-transform: capitalize;
+}
+
+
+@media screen and  (max-width:1200px) {
+  .item {
+    transition: transform 0.3s ease;
+    width:18vh
+  }
+
+  .item-above{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .item-details {
+    margin-top: 10px; 
+    width: 100%;
+  }
+  .item img {
+    width: 18vh;
+    height: 18vh;
+    margin-bottom: 0; 
+    padding: 0; 
+    display: block; 
+  }
+  
+
+  
+  .imp-details {
+    display: flex;
+    font-family: "Poppins", serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  p.item_name {
+    font-family: "Poppins", serif;
+    font-size: 1.5vh;
+    font-weight: 500;
+    margin: auto;
+    width: 15vh;
+}
+  
+  .item_prices {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: "Poppins", serif;
+    font-size: 2vh;
+    font-weight: 600;
+    align-items: center;
+    gap: 1vw;
+  }
+  
+  .old_price {
+    font-size: 1vh;
+    color: gray;
+    text-decoration: line-through;
+  }
+  
+  .lecturer{
+    color: darkslategrey;
+    font-weight: 700;
+    font-size: 1vh;
+    width: 20vh;
+    margin: 0 auto;
+  }
+  .sub-cat{
+    font-size: 1vh;
+  }
+  .other_details_items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+  }
+  .heart-button {
+    cursor: pointer;
+    position: relative;
+    font-size: 5vw;
+  }
+  
+  .review-section-main-item {
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    flex-direction: row;
+}
+
+.review-section-main-item p {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  font-size: 1vh;
+}
+
+img.whatsapp-icon {
+  height: 6vw;
+  width: 6vw; /* Adjust size as needed */
+  font-weight: 1000;
+  margin-right:auto;
+}
+.heart-button .heart-icon {
+  width: 7vw;
+  height: 7vw;
+  transition: transform 0.3s ease;
+}
+.new_price {
+  font-size: 1.5vh;
+  color: rgb(9, 9, 9);
+}
+
+.tag-item {
+  margin: 0 0.5vh; /* Space around each tag */
+  padding: 3px 3px; /* Padding inside each tag */
+  font-size: 1vh;
+}
+}
+@media (min-width: 481px) and (max-width: 1400px){
+    img.whatsapp-icon {
+        height: 5vw;
+        width: 5vw;
+        font-weight: 1000;
+        margin-right: auto;
+    }
+        .heart-button .heart-icon {
+        width: 6vw;
+        height: 6vw;
+        transition: transform 0.3s ease;
+    }
+}

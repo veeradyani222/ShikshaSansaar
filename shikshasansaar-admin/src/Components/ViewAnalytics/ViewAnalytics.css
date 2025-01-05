@@ -1,0 +1,125 @@
+:root {
+    --primary-color: #FF4500;
+    --secondary-color: #f8f9fa;
+    --text-color: #343a40;
+    --box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    --table-header-bg: #007bff;
+    --table-header-color: white;
+    --table-row-bg: #f1f1f1;
+  }
+  
+  
+  .view-analytics {
+    padding: 5vh 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .view-analytics .date-picker {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vw;
+    padding: 2vh;
+    background: white;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .view-analytics .date-input label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5vh;
+  }
+  
+  .view-analytics .date-input input {
+    padding: 0.8vh;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .view-analytics button {
+    padding: 1.2vh 2vw;
+    background-color: var(--table-header-bg);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-analytics button:hover {
+    background-color: #0056b3;
+  }
+  
+  .view-analytics .loading,
+  .view-analytics .error {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .view-analytics .analytics-data {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2vw;
+  }
+  
+  .view-analytics .box {
+    background: #FFF5E1;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    padding: 2vh;
+    text-align: center;
+  }
+  
+  .view-analytics .box h3 {
+    font-size: 1rem;
+    margin-bottom: 1vh;
+    color: var(--primary-color);
+    text-align: left;
+  }
+  
+  .view-analytics .box p {
+    font-size: 1rem;
+    text-align: right;
+  }
+  
+  .view-analytics .table-box {
+    grid-column: span 2;
+    background: white;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    padding: 2vh;
+  }
+  
+  .view-analytics table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1vh;
+  }
+  
+  .view-analytics thead th {
+    background-color: var(--table-header-bg);
+    color: var(--table-header-color);
+    text-align: left;
+    padding: 1vh;
+  }
+  
+  .view-analytics tbody tr:nth-child(even) {
+    background-color: var(--table-row-bg);
+  }
+  
+  .view-analytics tbody tr td {
+    padding: 1vh;
+    border: 1px solid #ddd;
+  }
+  
+  .view-analytics tbody tr:hover {
+    background-color: #eef;
+  }
+  

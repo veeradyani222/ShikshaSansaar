@@ -1,0 +1,80 @@
+.categories {
+    margin-top: 2vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    gap: 2vw;
+}
+
+.introhead {
+    text-align: center; /* Center the text */
+    font-size: 1.5vw;
+    margin-bottom: 2vh;
+    padding: 2vh;
+    font-family: "poppins",serif;
+    border: 3px solid #ff4500;
+    background-color: #F5F5DC;
+    margin-top: 2vh;
+}
+
+.categories-main {
+    padding: 0vh;
+}
+
+.categories li {
+    list-style: none; /* Shortened list-style-type */
+    transition: transform 0.3s ease, box-shadow 0.3s ease , outline 0.3s ease; /* Smooth transition for scale and shadow */
+    padding: 1vh 1vh;
+    outline: 3px solid black;
+    border-radius: 10px; /* Add rounded corners */
+
+}
+
+.categories li:hover {
+    transform: translateY(-5px); /* Slight upward movement */
+    color: white; /* Change text color to white */
+    border-radius: 10px; /* Add rounded corners */
+    outline: 3px solid black;
+    transition: all 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+
+.categories li img {
+    width: 15vw;
+    height: 15vw;
+}
+
+@media screen and (max-width: 480px) {
+    .categories {
+        grid-template-columns: repeat(2, 1fr); /* Reduced columns for smaller screens */
+    }
+
+    .introhead {
+        font-size: 5vw; /* Increased font size on smaller screens */
+        margin-bottom: 0;
+        padding: 3vh;
+        border: 3px solid #ff4500;
+        margin: 0vh 3vw;
+    }
+
+    .categories-main {
+        padding: 0; /* No padding for main categories on small screens */
+    }
+
+    .categories li img {
+        width: 30vw; /* Adjusted image size for smaller screens */
+        height: 30vw;
+        padding: 2vw;
+    }
+
+    .categories li:hover {
+        outline: 2px solid black;
+    }
+    .categories li {
+        list-style: none; /* Shortened list-style-type */
+        transition: transform 0.3s ease, box-shadow 0.3s ease , outline 0.3s ease; /* Smooth transition for scale and shadow */
+        padding: 0.2vh 0.2vh;
+        margin: 0.5vh 0.5vh;
+    }
+    
+}

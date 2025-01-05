@@ -1,0 +1,1092 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+.product-display {
+  display: flex;
+  gap: 2vw; /* Use vw for spacing */
+  padding: 2vh; /* Use vh for padding */
+  border: 1px solid #ddd;
+  background-color: #fff;
+  }
+
+.flex-column {
+  display: flex;
+  flex-direction: column; /* Arrange children in a column */
+  gap: 10px; /* Adjust the space between the dropdown and button */
+  align-items: flex-start; /* Align items to the start */
+}
+
+.image-gallery {
+  flex: 1;
+}
+
+.main-product-image {
+  width: 100%;
+  max-width: 40vw; /* Adjust width with vw */
+  border-radius: 1vw; /* Use vw for border radius */
+}
+
+.product-details {
+  flex: 2;
+  padding: 1vh; /* Use vh for padding */
+  width: 60vw;
+}
+
+.product-name {
+  font-size: 1vw; /* Use vw for font size */
+  font-weight: bold;
+  margin-bottom: 1vh; /* Use vh for margin */
+  color: orangered;
+}
+
+.product-description {
+  margin-bottom: 1.5vh; /* Use vh for margin */
+  text-align: left;
+  margin-left: 0;
+  font-size: 2vh;
+}
+
+.price-section {
+  font-size: 1.5vw; /* Use vw for font size */
+  margin-bottom: 1.5vh; /* Use vh for margin */
+}
+
+.new-price {
+  color: black;
+  font-weight: bold;
+}
+
+.old-price {
+  text-decoration: line-through;
+  margin-left: 1vw; /* Use vw for margin */
+  color: rgb(163, 152, 152);
+}
+
+.product-info p {
+  margin-bottom: 0.5vh; /* Use vh for margin */
+}
+
+.about-faculty {
+  margin-top: 1.5vh; /* Use vh for margin */
+  text-align: left;
+  margin-left: 0;
+}
+
+.about-faculty h3 {
+  font-size: 1.5vw; /* Use vw for font size */
+}
+
+.add-to-cart-button {
+  background: orangered;
+  color: black;
+  
+  border: none;
+
+  cursor: pointer;
+  font-family: "Poppins", serif;
+  font-size: 1vw; /* Use vh for font size */
+  font-weight: 700;
+  margin-top: 3vh;
+  width: 52.5vw;
+  text-align: center;
+ padding: 20px 20px;
+}
+
+.add-to-cart-button:hover {
+  background:orangered;
+  background-size: 200% 100%;
+  animation: shine 2.5s linear infinite;
+  color: black;
+}
+
+.product-link a {
+  display: inline-block;
+  margin-top: 1vh; /* Use vh for margin */
+  color: #007bff;
+  text-decoration: none;
+}
+
+.product-link a:hover {
+  text-decoration: underline;
+}
+
+
+.specification-selection{
+  margin-right:auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  width: 60vw;
+  appearance: none;
+}
+
+.mode-options {
+  font-size: 1vw;
+  -webkit-appearance: none; /* Removes default appearance on iOS */
+  -moz-appearance: none; /* Removes default appearance on Firefox */
+  appearance: none; /* Removes default appearance on all browsers */
+  text-align: left;
+  padding: 15px 10px;
+  width: 40vw;
+  background: transparent;
+
+  /* Add a custom arrow using Unicode */
+  background-image: linear-gradient(45deg, transparent 50%, black 50%), 
+                    linear-gradient(-45deg, transparent 50%, black 50%);
+  background-position: calc(100% - 10px) center, calc(100% - 5px) center;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+
+  /* Explicitly set text properties */
+  color: black; /* Replace with desired color */
+  text-decoration: none; /* Remove underlines or default link styles */
+  border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  cursor: pointer; /* Ensure it looks clickable */
+}
+
+.mode-option-main{
+  display: flex;
+  gap: 1vw;
+}
+.mode-option-head{
+  font-size: 2vh;
+  text-align: center;
+  padding: 15px 10px;
+  border: 1px solid black;
+  width: 10vw;
+  font-weight: 500;
+  background: orangered;
+
+}
+
+.product-navbar ul{
+  display: flex;
+    justify-content: center;
+    width: 100vw;
+    background: transparent;
+    padding: 1vw 1vw;
+    flex-direction: row;
+}
+
+.product-navbar li{
+  background-color: white;
+    color: black;
+    font-size: 2vh;
+    padding: 2vh 4vh;
+    margin: 0 10px;
+    border: 2px solid black;
+    border-radius: 1.5vh;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.product-navbar li:hover{
+  background-color: black;
+  color: white;
+}
+
+.information-about-product{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Table Container Styling */
+.product-info-table-container {
+  margin: 0px auto;
+  width: 90%;
+  overflow-x: auto; /* For responsiveness */
+}
+
+/* Table Base Styling */
+.product-info-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Header Styling */
+.product-info-table th {
+  background-color: #FF7F50; /* Orange theme */
+  color: #ffffff;
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Data Cell Styling */
+.product-info-table td {
+  padding: 12px 15px;
+  color: #555555;
+  font-size: 14px;
+  border-bottom: 1px solid #f0f0f0;
+  line-height: 1.5;
+  word-wrap: break-word; /* Wrap long words */
+  white-space: normal; /* Allow text wrapping */
+  overflow-wrap: break-word; /* Ensure all content wraps */
+}
+
+/* Alternate Row Styling */
+.product-info-table tr:nth-child(even) {
+  background-color: #fff7f0; /* Light orange for alternate rows */
+}
+
+.product-info-table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* Last Row Border Removal */
+.product-info-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Highlight Table Rows on Hover */
+.product-info-table tr:hover {
+  background-color: #ffecd6; /* Slight orange tint on hover */
+  cursor: pointer;
+}
+
+/* REVIEWS */
+
+.review-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.review-buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #555;
+  background: #e1e1e1;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.review-buttons .active {
+  background: #000000;
+  color: #fff;
+  box-shadow: 0px 4px 6px rgba(74, 144, 226, 0.3);
+}
+
+.review-buttons button:hover {
+  background: orangered;
+  color: #fff;
+}
+
+.reviews-list, .add-review-form {
+  margin-top: 20px;
+  padding: 6vh;
+  border-radius: 10px;
+
+}
+
+.review {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.review:last-child {
+  border-bottom: none;
+}
+
+.review h4 {
+  font-size: 18px;
+  color: #333;
+}
+
+.review p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.add-review-form input, .add-review-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+}
+
+.add-review-form textarea {
+  resize: vertical;
+}
+
+.add-review-form button {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  color: #fff;
+  background: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-review-form button:hover {
+  background: orangered;
+}
+
+.success {
+  color: #28a745;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.error {
+  color: #dc3545;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Adjust the spacing between items as needed */
+}
+
+.ReviewItem-container {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+li.active-product-display{
+  background-color: #000000;
+  color: white;
+}
+
+.product-important-note{
+  width: 70vw;
+  border: 1px solid black;
+  margin: 0 auto;
+  padding: 4vh 4vh;
+  text-align: center;
+  background-color: #A8E6CF;
+  margin-top: 3vh;
+}
+
+.product-important-note .note-head{
+  background-color: #81C784;
+  border: 1px solid black;
+  color: black;
+  padding: 2vh 2vh;
+  margin-bottom: 5vh;
+  font-weight: 700;
+}
+
+.product-important-note1{
+  width: 90vw;
+  margin: 0 auto;
+  padding: 4vh 4vh;
+  text-align: center;
+  background-color: rgba(255, 127, 80, 0.2);
+}
+
+.product-important-note1 .note-head1{
+  background-color: rgba(255, 127, 80, 0.5);
+  color: black;
+  padding: 2vh 2vh;
+  margin-bottom: 5vh;
+}
+
+
+.product-important-note2{
+  width: 90vw;
+  margin: 0 auto;
+  padding: 4vh 4vh;
+  text-align: center;
+  background-color: rgba(255, 127, 80, 0.2);
+}
+
+.product-important-note2 .note-head2{
+  background-color: rgba(255, 127, 80, 0.5);
+  color: black;
+  padding: 2vh 2vh;
+  margin-bottom: 5vh;
+}
+
+.buy-more-product-display{
+  margin-top: 15vh;
+  border-top: 2px solid grey;
+}
+
+.buy-more-product-display .heading{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5vh;
+    padding: 2vh 0vh;
+    width: 25vw;
+    color: black;
+    background-color:orangered;
+    margin: 10vh auto;
+}
+
+.product-demo-video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10vh;
+  margin-top: 10vh;
+  border-top: 2px solid grey;
+
+}
+.product-demo-video iframe.video-frame{
+  height: 50vh;
+  width: 50vw;
+  border-radius: 5vh;
+}
+
+.product-demo-video-heading{
+  font-size: 1.5vw;
+  margin-bottom: 3vh;
+  font-weight: 400;
+  color: black;
+  background-color: orangered;
+  padding: 2vh 2vh;
+}
+/* Basic modal overlay styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 1000; /* Ensure modal is on top */
+  display: flex; /* Use flexbox to center the modal */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  padding: 20px; /* Adds padding around the modal */
+  
+}
+
+/* Modal content */
+.modal-overlay .modal {
+  background: linear-gradient(
+    to right,
+    rgba(255, 180, 100, 1),
+    rgba(255, 160, 80, 1),
+    rgba(255, 190, 110, 1)
+);
+border: 3px solid white;
+outline: 2px solid black;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  width: 50%; /* Modal width (adjust as necessary) */
+  height: auto; /* Adjust based on content */
+  overflow-y: auto; /* Allow scrolling if the content is too long */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for styling */
+  overflow-x: hidden;
+}
+
+/* Close button style */
+.modal-overlay .close-button {
+  position: absolute;
+margin-left: 72%;
+margin-top: -1%;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Basic button style */
+.modal-overlay .quote-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-overlay .quote-button:hover {
+  background-color: #0056b3;
+}
+
+.modal-overlay form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal-overlay  label{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 1.2vw;
+}
+.modal-overlay input{
+  font-size: 1vw;
+padding:0.5vh 0.5vh;
+  margin: 0.5vh 0vh;
+  background-color: white;
+  color: black;
+  border:1px solid black
+}
+.modal-overlay h2{
+  display: flex;
+  justify-content: center;
+ font-size: 3vh;
+  padding: 0.5vh 0vh;
+  background: linear-gradient(
+    to left,
+    rgba(255, 180, 100, 1),
+    rgba(255, 160, 80, 1),
+    rgba(255, 190, 110, 1)
+);
+color: black;
+font-weight: 700;
+
+  width: 40%;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+.modal-overlay button{
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  padding: 1vh 0vh;
+  background: linear-gradient(
+    to left,
+    rgba(255, 180, 100, 1),
+    rgba(255, 160, 80, 1),
+    rgba(255, 190, 110, 1)
+);
+color: black;
+font-weight: 700;
+
+  width: 40%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 1vh;
+  border: 1px solid black;
+}
+.modal-overlay button.submit-btn:hover{
+
+  background:white
+}
+
+.product-display-important .success-message {
+  color: black;
+  background-color: lightgreen;
+  padding: 1vh 1vh;
+  border-radius: 3vh;
+  margin-bottom: 2vh;
+  font-size: 2vh;
+  margin-top: 1vh;
+  margin-left: 0;
+  margin-right: 0;
+}
+.product-display-important .loading-message {
+  color: black;
+  padding: 1vh 1vh;
+  border-radius: 3vh;
+  border: 1px solid black;
+  margin-bottom: 2vh;
+  margin-top: 1vh;
+  font-size: 2vh;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.review-main-container-important{
+  border: 2px solid black;
+}
+
+
+.course-statistics1 {
+  margin: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  background-color: #FFF5E1;
+  padding: 5px 5px;
+}
+
+.course-statistics1 .stat1 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #000000;
+
+}
+
+.course-statistics1 h3 {
+  font-weight: normal;
+  font-size: 18px;
+  color: #000000;
+  font-family: "Oswald", "poppins";
+}
+
+.course-statistics1 h3 img {
+  height: 18px;
+  width: 18px;
+}
+
+span.offer-applied{
+  margin-left: 2vh;
+  font-size: 2vh;
+  font-family: serif;
+  border: 1px solid black;
+  padding: 1vh 1vh;
+}
+
+.table-data {
+  white-space: normal; /* Allow text to wrap within the table cell */
+  word-wrap: break-word; /* Ensure long words break to the next line if necessary */
+  line-height: 1.6; /* Add line spacing for readability */
+  font-size: 1rem; /* Adjust font size for better text visibility */
+  color: #555555; /* Neutral color for better readability */
+}
+
+
+@media screen and (max-width:480px) {
+  .product-display {
+    display: flex;
+    gap: 2vw;
+    padding: 2vh;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+  
+  .image-gallery {
+    flex: 1;
+  }
+  
+  span.offer-applied {
+    font-size: 2vh;
+    font-family: serif;
+    margin-top: 2vh;
+    border: 1px solid black;
+    padding: 1vh 1vh;
+    display: block; /* This ensures the span occupies the full width and shifts to the next line */
+  }
+
+  .main-product-image {
+    width: 100%;
+    max-width: 52vw;
+    border-radius: 1vw;
+  }
+
+
+  .product-details {
+    width: 90vw;           /* Set width to 90% of the viewport width */
+    margin: 0 auto;        /* Center the element horizontally */
+    display: flex;         /* Use flex layout for child alignment */
+    justify-content: center; /* Center content within .product-details */
+    padding: 1vh;    
+    flex-direction: column;      
+}
+
+  
+  .product-name {
+    font-size: 2vh;
+    font-weight: bold;
+    margin-bottom: 1vh;
+    text-align: center;
+  }
+  
+  .product-description {
+    margin-bottom: 1.5vh; /* Use vh for margin */
+    text-align: left;
+    margin-left: 0;
+    font-size: 2vh;
+  }
+  
+  .price-section {
+    font-size: 3vh;
+    margin-bottom: 3.5vh;
+    text-align: center;
+
+  }
+  
+  .new-price {
+    color: black;
+    font-weight: bold;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    margin-left: 1vw; /* Use vw for margin */
+    color: rgb(163, 152, 152);
+  }
+
+  .mode-options {
+
+      font-size: 1.5vh;
+      appearance: none; /* Removes native styling */
+      text-align: center;
+      width: 65vw;
+      padding: 5px; /* Adds some spacing for better readability */
+      word-wrap: break-word;    /* Allows long words to break to the next line */
+      white-space: normal;      /* Enables multi-line text wrapping */
+      overflow-wrap: break-word; /* Ensures wrapping when necessary */
+      appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-align: left;
+
+    /* Add a custom arrow using Unicode */
+    background: transparent;
+    background-image: linear-gradient(45deg, transparent 50%, black 50%), 
+                      linear-gradient(-45deg, transparent 50%, black 50%);
+    background-position: calc(100% - 10px) center, calc(100% - 5px) center;
+    background-size: 5px 5px, 5px 5px;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+  
+  
+}
+  
+  .product-info p {
+    margin-bottom: 0.5vh; /* Use vh for margin */
+  }
+  
+  .about-faculty {
+    margin-top: 1vh; /* Use vh for margin */
+    text-align: left;
+    margin-left: 0;
+  }
+  
+  .about-faculty h3 {
+    font-size: 1.5vw; /* Use vw for font size */
+  }
+  
+  .add-to-cart-button {
+    background:orangered;
+    color: black;
+    padding: 3vh 5vw;
+    border: none;
+    border-radius: 1vw;
+    cursor: pointer;
+    font-family: "Poppins", serif;
+    font-size: 2vh;
+    font-weight: 700;
+    width: 86vw;
+  }
+  
+  .add-to-cart-button:hover {
+    background: linear-gradient(45deg, #FF6F00, #FF8C00, #FFB74D);
+    background-size: 200% 100%;
+    animation: shine 2.5s linear infinite;
+    color: black;
+  }
+  
+  .product-link a {
+    display: inline-block;
+    margin-top: 1vh; /* Use vh for margin */
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .product-link a:hover {
+    text-decoration: underline;
+  }
+  
+  .product-info-table {
+    width: 100%;
+    margin: 2vw 0; /* Adjusting margin with vw */
+    
+    border-collapse: collapse;
+    overflow-x: auto;
+  }
+
+  .product-info-table th, .product-info-table td {
+    font-size: 3vw; /* Adjusting font size with vw for responsiveness */
+    padding: 2vw; /* Increasing padding with vw for better readability */
+    word-wrap: break-word;
+  }
+
+  .product-info-table th {
+    font-size: 2vw; /* Increase font size of headers on smaller screens */
+  }
+
+  .product-info-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  .product-info-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .product-navbar ul {
+            display: flex;
+            justify-content: center;
+            gap: 1vw;
+            margin-top: 3vh;
+            margin-bottom: 0;
+            width: 99vw;
+            background: transparent;
+            padding: 3vw 2vw;
+      }
+
+    .product-navbar ul li {
+      flex: 1 1 20%;
+      max-width: 15%;
+      text-align: center;
+  }
+
+
+  .product-navbar li {
+    background-color: white;
+    color: black;
+    font-size: 1.5vh;
+    padding: 1vh 2vh;
+    margin: 0 0px;
+    border: 2px solid black;
+    border-radius: 1.5vh;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+
+.product-important-note1{
+  width: 70vw;
+  margin-bottom: 5vh;
+  margin-top: 2vw;
+}
+
+.product-important-note .note-head{
+  padding: 2vh 2vh;
+  margin-bottom: 5vh;
+}
+
+.buy-more-product-display .heading{
+    width: 75vw;
+}
+
+.product-demo-video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10vh;
+  margin-top: 10vh;
+  border-top: 2px solid grey;
+
+}
+.product-demo-video iframe.video-frame{
+  height: 70vw;
+  width: 90vw;
+  border-radius: 3vh;
+}
+
+.product-demo-video-heading{
+  font-size: 2.5vh;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 1000; /* Ensure modal is on top */
+  display: flex; /* Use flexbox to center the modal */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  padding: 20px; /* Adds padding around the modal */
+  margin-bottom: 10vh;
+  margin-top: 2vh;
+  z-index: 10000000000000;
+  
+}
+
+.modal-overlay .modal {
+  background: linear-gradient(to right, rgba(255, 180, 100, 1), rgba(255, 160, 80, 1), rgba(255, 190, 110, 1));
+  border: 3px solid white;
+  outline: 2px solid black;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  width: 90%;
+  height: auto;
+  overflow-y: auto;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow-x: hidden;
+  margin-top: 15vh;
+}
+
+
+/* Close button style */
+.modal-overlay .close-button {
+  position: absolute;
+  margin-left: 66%;
+  margin-top: -8%;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Basic button style */
+.modal-overlay .quote-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-overlay .quote-button:hover {
+  background-color: #0056b3;
+}
+
+.modal-overlay form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal-overlay  label{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 2.2vh;
+}
+.modal-overlay input{
+  font-size: 2vh;
+  padding: 0.5vh 0.5vh;
+  margin: 0.5vh 0vh;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+.modal-overlay h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 2vh;
+  padding: 0.5vh 1.5vh;
+  background: linear-gradient(to left, rgba(255, 180, 100, 1), rgba(255, 160, 80, 1), rgba(255, 190, 110, 1));
+  color: black;
+  font-weight: 700;
+  width: 47%;
+  margin: 1vh auto;
+  border: 1px solid black;
+  text-align: center;
+}
+.modal-overlay button{
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  padding: 1vh 0vh;
+  background: linear-gradient(
+    to left,
+    rgba(255, 180, 100, 1),
+    rgba(255, 160, 80, 1),
+    rgba(255, 190, 110, 1)
+);
+color: black;
+font-weight: 700;
+
+  width: 40%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 1vh;
+  border: 1px solid black;
+}
+.modal-overlay button.submit-btn:hover{
+
+  background:white
+}
+.review-main-container-important{
+  margin: 1vh 2vh;
+}
+
+.review-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 1vh 2vh;
+}
+
+.course-statistics1 {
+  margin: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  background-color: #FFF5E1;
+  padding: 5px 5px;
+}
+
+.course-statistics1 .stat1 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #000000;
+
+}
+
+.course-statistics1 h3 {
+  font-weight: normal;
+  font-size: 15px;
+  color: #000000;
+  font-family: "Oswald", "poppins";
+}
+
+.course-statistics1 h3 img {
+  height: 16px;
+  width: 16px;
+}
+
+.specification-selection{
+  margin-right:auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  width: 85vw;
+  appearance: none;
+}
+
+.mode-option-head{
+  font-size: 1.5vh;
+  text-align: center;
+  padding: 10px 5px;
+  border: 1px solid black;
+  width: 15vw;
+  font-weight: 500;
+  background: orangered;
+  margin-right: auto;
+
+}
+
+
+
+}

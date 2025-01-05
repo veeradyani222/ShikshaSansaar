@@ -1,0 +1,389 @@
+.profile-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     height: auto;
+    font-family: 'Arial', sans-serif;
+    margin: 0 auto;
+}
+
+/* Navigation Bar */
+.profile-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vw;
+    width: 100vw;
+    background: transparent;
+    padding: 2vw 2vw;
+}
+
+.profile-nav-btn {
+    background-color: white;
+    color: black;
+    font-size: 2vh;
+    padding: 2vh 4vh;
+    margin: 0 10px;
+    border: 2px solid black;
+    border-radius: 1.5vh;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.black-bg-profile-btn{
+    background-color: #000000;
+    color: white;
+}
+
+.profile-nav-btn:hover {
+    background-color: #000;
+    color: white;
+}
+
+/* Content Box Styling */
+
+
+.profile-title {
+    margin-bottom: 2vh;
+    font-size: 3vh;
+    color: #333;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.profile-details  {
+    padding: 3vh 5vh;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-details p {
+    font-size: 2.5vh;
+    text-align: left;
+    color: #555;
+    margin-bottom: 2vh;
+}
+
+.profile-label {
+    text-align: left;
+    margin-bottom: 1.5vh;
+    font-weight: 600;
+    color: #000;
+    font-size: 1.5vh;
+    display: flex;
+    align-items: center;
+}
+
+.profile-input {
+    width: 100%;
+    font-size: 1.5vh;
+    padding: 1.5vh;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 1.5vh;
+}
+
+.profile-submit-btn {
+    background: linear-gradient(45deg, #FF6F00, #FF8C00, #FFB74D);
+    color: black;
+    padding: 1.5vh 3vh;
+    border: none;
+    border-radius: 1.5vh;
+    cursor: pointer;
+    font-size: 2vh;
+    transition: background-color 0.3s ease;
+    margin-top: 1.5vh;
+    width: 100%;
+}
+
+.profile-submit-btn:hover {
+    background-color: #218838;
+}
+
+.profile-message {
+    margin-bottom: 2vh;
+    padding: 1.5vh;
+    border-radius: 1vh;
+    text-align: center;
+    font-size: 2.5vh;
+}
+
+.profile-message.success {
+    background-color: #d4edda;
+    color: green;
+}
+
+.profile-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.profile-update-details{
+    padding: 2vh 3vh;
+    width: 20vw;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+/* Password Update Section Styling */
+.profile-update-password {
+    background-color: #f9f9f9;
+    border-radius: 1.5vh;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 2vw;
+    max-width: 70vw;
+    margin: 0 auto;
+}
+
+.profile-update-password-title {
+    font-size: 5vh;
+    color: #333;
+    margin-bottom: 2vh;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.profile-password-label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5vh;
+    font-size: 2.5vh;
+    color: #555;
+}
+
+.profile-input-field {
+    margin-top: 1vh;
+    padding: 1.5vh;
+    border: 1px solid #ccc;
+    border-radius: 1vh;
+    font-size: 2.5vh;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.profile-input-field:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.profile-submit-button {
+    background: linear-gradient(45deg, #FF6F00, #FF8C00, #FFB74D);
+    color: #fff;
+    padding: 1.5vh 2.5vh;
+    border: none;
+    border-radius: 1.5vh;
+    cursor: pointer;
+    font-size: 2.5vh;
+    width: 100%;
+    margin-top: 2vh;
+    transition: background-color 0.3s ease;
+}
+
+.profile-submit-button:hover {
+    background-color: orange
+}
+
+.profile-submit-button:active {
+    background-color: orange
+}
+@media screen and (max-width:480px){
+
+    .profile-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: "Open Sans Condensed", "HelveticaNeue", "Helvetica Neue", sans-serif;
+         height: auto;
+        background-color: #f9f9f9;
+        font-family: 'Arial', sans-serif;
+    }
+    
+    /* Navigation Bar */
+    .profile-nav {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); /* Creates two equal-width columns */
+        justify-items: center; /* Centers the items horizontally in each grid cell */
+        margin-bottom: 2vw;
+        width: 90vw;
+        background: transparent;
+    }
+    
+    
+    .profile-nav-btn {
+        background-color: white;
+        color: black;
+        font-size: 1.5vh;
+        padding: 1vh 0.5vh;
+        margin: 0 10px;
+        border: 2px solid black;
+        border-radius: 1.5vh;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .profile-nav-btn:hover {
+        background-color: #000;
+        color: white;
+    }
+    
+    /* Content Box Styling */
+    .profile-content-box {
+        background-color: #fff;
+        padding: 2vw;
+        border-radius: 1.5vh;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        width: 90%;
+        text-align: center;
+      
+    }
+    
+    .profile-title {
+        margin-bottom: 2vh;
+        font-size: 2vh;
+        color: #000;
+        font-weight: 500;
+    }
+    
+    .profile-details p {
+        font-size: 1.5vh;
+        text-align: left;
+        color: #555;
+        margin-bottom: 2vh;
+    }
+    
+    .profile-label {
+        text-align: left;
+        margin-bottom: 1.5vh;
+        font-weight: 600;
+        color: #000;
+        font-size: 1.5vh;
+        display: flex;
+        align-items: center;
+    }
+    
+    .profile-input {
+        width: 85%;
+        font-size: 1.5vhvh;
+        padding: 1vh;
+        margin: 5px 0 15px;
+        border: 1px solid #ccc;
+        border-radius: 1.5vh;
+    }
+    
+    .profile-submit-btn {
+        background: linear-gradient(45deg, #FF6F00, #FF8C00, #FFB74D);
+        color: black;
+        padding: 1.5vh 3vh;
+        border: none;
+        border-radius: 1.5vh;
+        cursor: pointer;
+        font-size: 2.5vh;
+        transition: background-color 0.3s ease;
+        margin-top: 1.5vh;
+        width: 100%;
+    }
+    
+    .profile-submit-btn:hover {
+        background-color: #218838;
+    }
+    
+    .profile-message {
+        margin-bottom: 2vh;
+        padding: 1.5vh;
+        border-radius: 1vh;
+        text-align: center;
+        font-size: 2.5vh;
+    }
+    
+    .profile-message.success {
+        background-color: #d4edda;
+        color: green;
+    }
+    
+    .profile-message.error {
+        background-color: #f8d7da;
+        color: #721c24;
+    }
+    
+    /* Password Update Section Styling */
+    .profile-update-password {
+        background-color: #f9f9f9;
+        border-radius: 1.5vh;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 2vw;
+        max-width: 70vw;
+        margin: 0 auto;
+    }
+    
+    .profile-update-password-title {
+        font-size: 2vh;
+        color: #333;
+        margin-bottom: 2vh;
+        text-align: center;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    
+    .profile-password-label {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.5vh;
+        font-size: 2.5vh;
+        color: #555;
+    }
+    
+    .profile-input-field {
+        margin-top: 1vh;
+        padding: 1vh;
+        border: 1px solid #ccc;
+        border-radius: 1vh;
+        font-size: 1.5vh;
+        width: 100%;
+        box-sizing: border-box;
+        transition: border-color 0.3s ease;
+    }
+    
+    .profile-input-field:focus {
+        border-color: #007bff;
+        outline: none;
+    }
+    
+    .profile-submit-button {
+        background: linear-gradient(45deg, #FF6F00, #FF8C00, #FFB74D);
+        color: #fff;
+        padding: 1.5vh 2.5vh;
+        border: none;
+        border-radius: 1.5vh;
+        cursor: pointer;
+        font-size: 2.5vh;
+        width: 100%;
+        margin-top: 2vh;
+        transition: background-color 0.3s ease;
+    }
+    
+    .profile-submit-button:hover {
+        background-color: orange
+    }
+    
+    .profile-submit-button:active {
+        background-color: orange
+    }
+    
+    .profile-update-details{
+        padding: 2vh 3vh;
+        width: 75vw;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border: 2px solid black;
+    }
+}

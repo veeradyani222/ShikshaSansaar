@@ -1,0 +1,71 @@
+.FirstHello {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0;
+    border: 3px solid black;
+    padding: 2vh 2vh;
+    margin: 1vw 1vw;
+    background-color: #f6eaca;
+    background-image: url('../assets/bg_image.png'); /* Path to your image */
+  background-size: cover; /* Make sure the image covers the entire area */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+}
+
+.FirstHello h1{
+    color: black;
+    font-size: 2vh;
+    padding: 1vh 1vh;
+    text-align: center;
+    background-color: #e6d8b8;
+    width: 80vw;
+    border: 3px solid black;
+}
+
+/* Container for animation */
+.animation-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0; /* Adjust spacing between heading and categories */
+    height: 10px; /* Adjust as needed */
+    overflow: hidden; /* Prevent overflow issues */
+}
+
+/* Line across the container */
+.line {
+    width: 100%;
+    height: 4px;
+    background-color: #000; 
+    position: absolute;
+}
+
+/* Diamond shape */
+.moving-diamond {
+    width: 20px;
+    height: 20px;
+    background-color: orangered;
+    transform: rotate(45deg); /* Create diamond shape */
+    position: absolute;
+    animation: moveDiamond 2s linear infinite;
+}
+
+/* Animation for diamond */
+@keyframes moveDiamond {
+    0% {
+        left: 0; /* Start from the left */
+    }
+    100% {
+        left: 100%; /* Move to the right */
+    }
+}
+
+@media screen and (max-width:480px){
+    .FirstHello {
+        margin: 1vh 1vh;
+        padding: 2vh 2vh;
+    }
+}

@@ -1,0 +1,62 @@
+.ReviewItem-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1vw;
+  width: 100%;
+}
+
+.rv-main-container {
+  background-color: #ffffff;
+  border-radius: 1vw;
+  padding: 2vw;
+  box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.1);
+  width: 15vw;
+  height: auto;
+  margin: 1vh;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+.ReviewItem-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2vh;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 1vw;
+}
+
+.ReviewItem-review {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2vh;
+  color: #555;
+  margin-bottom: 2vw;
+}
+
+.ReviewItem-date {
+  font-family: 'Arial', sans-serif;
+  font-size: 2.2vh;
+  color: #888;
+  text-align: right;
+}
+
+
+@media screen and (max-width:480px) {
+  .ReviewItem-container {
+    padding: 1vh;
+  }
+  
+  .rv-main-container {
+    border-radius: 1vh;
+    padding: 2vh;
+    width: 25vh;
+    height: auto;
+    margin: 1vh;
+  }
+
+  .ReviewItem-date {
+    font-size: 1.5vh;
+  }
+  
+  
+}

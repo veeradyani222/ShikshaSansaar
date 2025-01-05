@@ -1,0 +1,58 @@
+.faculty-product {
+  width: 90vw;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.faculty-product-head {
+  display: grid;
+  grid-template-columns: 20% 2% 28% 40% 10%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5vh;
+  padding: 1vh 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.faculty-product-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.faculty-product-format-main {
+  display: grid;
+  grid-template-columns: 20% 2% 28% 40% 10%;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5vh;
+  padding: 1vh 0; /* Reduced padding */
+  border-bottom: 1px solid #ddd;
+}
+
+.faculty-product-format img {
+  max-width: 10vw;
+  max-height: 10vh;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.faculty-product-format button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 3.5vh;
+  height: 3.5vh;
+}
+
+.faculty-product-format button img {
+  width: 2.5vh;
+  height: 2.5vh;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ddd;
+  margin: 0;
+}

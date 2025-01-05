@@ -1,0 +1,117 @@
+.add-blog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2vh 4vw;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 1vw;
+    max-width: 100vw;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+
+  .form-group label{
+    padding-top: 5vh;
+  }
+  
+  .heading {
+    font-size: 4vw;
+    margin-bottom: 3vh;
+    color: #333;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .add-blog-form {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    max-width: 90vw;
+    background-color: #fff;
+    padding: 3vh 4vw;
+    border-radius: 0.75vw;
+    box-shadow: 0 2vw 2vh rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-field {
+    padding: 1.5vw;
+    margin-bottom: 3vh;
+    border: 1px solid #ddd;
+    border-radius: 0.5vw;
+    font-size: 1.8vw;
+    background-color: #f8f8f8;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+  }
+  
+  .input-field:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0.5vw rgba(0, 123, 255, 0.5);
+  }
+  
+  .description-field {
+    height: 30vh;
+    resize: vertical;
+    padding: 1.5vw;
+    box-sizing: border-box;
+  }
+  
+  .submit-button {
+    padding: 1.5vh 3vw;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0.5vw;
+    font-size: 1.8vw;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 0.5vw 1vh rgba(0, 0, 0, 0.1);
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-0.5vh);
+  }
+  
+  .submit-button:active {
+    background-color: #004494;
+    transform: translateY(0.5vh);
+  }
+  
+  .custom-file-upload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5vw;
+    background-color: #007bff;
+    color: white;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    text-align: center;
+    width: 40vh;
+    height: 40vh;
+    margin-bottom: 3vh;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.8vw;
+    transition: background-color 0.3s;
+  }
+  
+  .custom-file-upload img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5vw;
+  }
+  
+  .custom-file-upload:hover {
+    background-color: #0056b3;
+  }
+  
+  .file-input {
+    display: none; /* Hide the actual file input */
+  }
+  

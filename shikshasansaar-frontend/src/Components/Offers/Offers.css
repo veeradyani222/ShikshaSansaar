@@ -1,0 +1,111 @@
+
+
+
+.offer_heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "poppins" , serif;
+    font-size: 3vh;
+    padding-top: 5vh;
+    
+
+}
+
+.offer_page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.offers_top img{
+    height: 50vh;
+}
+
+
+.offers_bottom {
+    padding: 3vh 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "poppins", serif;
+
+}
+.offers_bottom h2{
+    font-size: 2vh;
+    color:  rgb(74, 72, 72);
+}
+.promo_code{
+    width: 70vw;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 4vh;
+    margin-top: 2vh;
+    font-family: "poppins",serif;
+    font-weight: 500;
+    background-color: #FFF5E1;
+
+}
+
+.offers_bottom button{
+    padding: 2vh;
+    margin-top: 1vh;
+    font-family: "poppins" , serif;
+    font-size: 2vh;
+    font-weight: 500;
+    background: linear-gradient(45deg, #FF6F00, #FF8C00, #FFB74D);
+    background-color: var(--first-color);
+    border:2px solid black;
+    border-radius: 30vh;
+    margin-top: 3vh;
+}
+
+@media screen and (max-width:480px){
+
+    .offer_heading{
+       
+        font-size: 2vh;
+        text-align: center;
+        padding-top: 5vh;
+    }
+    
+    .offers_top img{
+        height: 25vh;
+    }
+    
+    
+    .offers_bottom{
+      font-size: 1vh;
+      padding: 4vh 4vh;
+        align-items: center;
+        text-align: center;
+       
+    }
+    
+    .promo_code{
+      margin-top: 4vh;
+        font-size: 3vh;
+        
+    }
+    
+    .offers_bottom button{
+        padding: 1vh;
+        font-family: "poppins", serif;
+        font-size: 2vh;
+        font-weight: 800;
+        color: black;
+        background-color: var(--first-color);
+        border: 2px solid black;
+        border-radius: 30vh;
+        margin-top: 2vh;
+    }
+    
+    
+    .offers-main{
+        margin-bottom: 10vh;
+    }
+    
+}

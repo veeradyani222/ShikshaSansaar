@@ -1,0 +1,63 @@
+
+  
+  .user-purchase-data {
+    margin-top: 15px;
+    padding: 15px;
+    font-family: "poppins", serif;
+
+  }
+  
+  .purchase-order {
+    margin-bottom: 20px;
+  }
+  
+  .purchase-items {
+    margin-top: 15px;
+  }
+  
+  .purchase-items-header  {
+        display: grid;
+        grid-template-columns: repeat(15, 20fr);
+        background-color: #007bff;
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+        width: 240vw;
+  }
+
+  .purchase-items-header div{
+    width:15vw
+  }
+  
+  .purchase-item-row {
+    display: grid;
+    grid-template-columns: repeat(15, 20fr);
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    width: 90vw;
+  }
+  
+  .purchase-item-row:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+  
+  .purchase-item-row a {
+    color: #007bff;
+    text-decoration: underline;
+  }
+  
+  .purchase-item-row div {
+    padding: 5px;
+    width: 15vw;
+  }
+  
+.purchase-data-1{
+  display: flex;
+  flex-direction: row;
+  gap: 5vw;
+}
+
+.purchase-data-1 p{
+  width: 5vw;
+}
+  

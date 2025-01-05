@@ -1,0 +1,45 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full screen width */
+  height: 20vh; /* Adjust as needed */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2vw; /* Horizontal padding */
+  color: #fff; /* Text color */
+  z-index: 1000; /* Ensures it stays on top */
+  border: 2px solid black;
+  z-index: 5000;
+
+
+}
+
+/* Logo styling */
+.navbar-logo img {
+  height: 20vh; /* Adjust as needed */
+  object-fit: contain;
+}
+
+/* Heading styling */
+.navbar .heading {
+  font-size: 2vh;
+  margin-right: 5vw;
+  gap: 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.navbar h3{
+  font-weight: 400;
+  color: black;
+  padding: 2vh 2vh;
+  border: 2px solid black;
+}
+
+.navbar button.navbarbutton{
+  margin-right: 20vh;
+  font-size: 5vw;
+}
+

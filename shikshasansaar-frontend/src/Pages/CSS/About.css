@@ -1,0 +1,57 @@
+.about-containers h1 , .about-containers h2 , .about-containers h3 , .about-containers h4 {
+    color: black;
+    padding: 0; /* Removed padding */
+    margin-top: 12vh; /* Added margin removal */
+    margin-bottom: 0vh;
+}
+.about{
+    padding: 2vw 2vw;
+}
+.about-containers span {
+    color: black;
+    padding: 0 3vh; /* Removed padding */
+    margin:0; /* Added margin removal */
+}
+
+.about-containers {
+    gap: 0; /* Removed gap */
+    padding: 0; /* Removed padding */
+}
+
+.about-section-paragraph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5vh;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    
+}
+
+.decorations {
+    display: flex;
+    justify-content: center;
+    margin: 0; /* Removed margin */
+    align-items: center;
+    gap: 5vw; /* Removed gap */
+    margin-bottom: 2vw ;
+    font-size: 5vh;
+    color: #E6A817;
+    font-weight: 400;
+}
+
+@media screen and (max-width:480px){
+    .decorations {
+        gap: 10vw; /* Removed gap */
+    }
+
+    .about-section-paragraph {
+        font-size: 1.5vh;
+    }
+
+    .about-containers h1 , .about-containers h2 , .about-containers h3 , .about-containers h4 {
+      margin-top: 8vh; 
+    }
+    
+}

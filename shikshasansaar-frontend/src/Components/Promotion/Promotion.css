@@ -1,0 +1,36 @@
+/* Full container styling */
+.promotion {
+  width: 100vw; /* Full width of the viewport */
+  height: 10vh; /* Adjust height as needed */
+  background-color: #1a1a1a; /* Very dark gray */
+  color: #ffffff; /* White text for contrast */
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  font-size: 1.2vw; /* Slightly larger font */
+  text-align: center;
+  position: relative; /* Keeps it below the footer */
+  bottom: 0; /* Stick to the bottom */
+}
+
+/* Link styling */
+.promotion-link {
+  color: #25d366; /* WhatsApp's green */
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 5px; /* Small gap between text and link */
+  transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover effect */
+.promotion-link:hover {
+  color: #07f9dd; /* Darker WhatsApp green */
+}
+
+@media screen and (max-width:480px){
+    .promotion {
+        font-size: 1.5vh; /* Slightly larger font */
+      margin-bottom: 9vh;
+
+      }
+}

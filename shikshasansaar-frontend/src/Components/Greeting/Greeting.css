@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+.greeting-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #FFD700, #FFC107, #FFB300, #FF8C00, #FF6F00);
+    animation: goldShimmer 8s ease-in-out infinite;
+    color: white;
+    font-size: 3vh;
+    font-family: "oswald", sans-serif;
+    padding: 0.5vh 0.5vh;
+    width: 100%;
+    text-align: center;
+    margin: 2vh auto;
+
+}
+
+@keyframes goldShimmer {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.greeting-container h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: black;
+    font-size: 4vh;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+    margin: 2vh auto;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:480px) {
+    .greeting-container{
+        width: 95vw;
+    }
+    
+    .greeting-container h1{
+        font-size: 2vh;
+    }
+}

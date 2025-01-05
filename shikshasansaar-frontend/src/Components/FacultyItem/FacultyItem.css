@@ -1,0 +1,55 @@
+.facultyitem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2vh;
+  transition: transform 0.3s ease; /* Added missing semicolon */
+}
+
+.facultyitem:hover {
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+.facultyitem img {
+  width: 10vw;
+  height: 10vw;
+  margin: 0; /* Removed unnecessary properties */
+  padding: 0; 
+  display: block; 
+}
+
+.facultyitem-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Poppins", serif;
+  font-size: 2vh;
+  font-weight: 600;
+}
+
+.lecturer {
+  color: darkslategrey;
+  font-weight: 700;
+  font-size: 1.5vh;
+}
+
+@media screen and (max-width: 480px) {
+  .facultyitem img {
+      width: 30vw; /* Adjusted image size for smaller screens */
+      height: 30vw;
+  }
+
+  .facultyitem-details {
+      font-size: 1.5vh; /* Reduced font size on smaller screens */
+      font-weight: 500;
+  }
+
+  .lecturer {
+      font-size: 1.5vh; /* Consistent font size on smaller screens */
+      font-weight: 500;
+  }
+}

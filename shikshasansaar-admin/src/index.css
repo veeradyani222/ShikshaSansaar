@@ -1,0 +1,122 @@
+/* AddProduct.css */
+
+.add-product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2vh 4vw;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 1vw;
+    width: 70vw;
+    min-height: 100vh;
+  }
+  
+  .heading {
+    font-size: 1.5vw; /* Adjusted font size for better readability */
+    margin-bottom: 3vh;
+    color: #333;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .add-product-form {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    max-width: 70vw;
+    background-color: #fff;
+    padding: 3vh 4vw;
+    border-radius: 0.75vw;
+    box-shadow: 0 2vw 2vh rgba(0, 0, 0, 0.1);}
+  
+  .input-field, .category-field {
+    width: 100%; /* Ensure inputs use full width */
+    padding: 1.2vh 2vw; /* Adjusted padding for better spacing */
+    margin-bottom: 2vh; /* Reduced margin for more compact layout */
+    border: 1px solid #ddd;
+    border-radius: 0.5vw;
+    font-size: 1vw; /* Adjusted font size for better fit */
+    background-color: #f8f8f8;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+  }
+  
+  .input-field:focus, .category-field:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0.5vw rgba(0, 123, 255, 0.5);
+  }
+  
+  .description-field {
+    width: 100%; /* Ensure description field uses full width */
+    height: 30vh; /* Reduced height for better fit */
+    resize: vertical;
+    padding: 1.2vh 2vw; /* Adjusted padding */
+    box-sizing: border-box;
+  }
+  
+  .submit-button {
+    padding: 1.2vh 2.5vw; /* Adjusted padding */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0.5vw;
+    font-size: 1.6vw; /* Adjusted font size */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 0.5vw 1vh rgba(0, 0, 0, 0.1);
+    margin-top: 2vh; /* Added margin-top for spacing */
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-0.5vh);
+  }
+  
+  .submit-button:active {
+    background-color: #004494;
+    transform: translateY(0.5vh);
+  }
+  
+  .custom-file-upload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vh 2vw; /* Adjusted padding */
+    background-color: #007bff;
+    color: white;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    text-align: center;
+    width: 40vw; /* Adjusted width */
+    height: 40vh; /* Adjusted height */
+    margin-bottom: 3vh;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.6vw; /* Adjusted font size */
+    transition: background-color 0.3s;
+  }
+  
+  .custom-file-upload img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5vw;
+  }
+  
+  .custom-file-upload:hover {
+    background-color: #0056b3;
+  }
+  
+  .file-input {
+    display: none; /* Hide the actual file input */
+  }
+  input.date {
+    font-size: 2.5vh; /* Increase font size for a bigger calendar UI */
+    padding: 1vh 2vw; /* Adjust padding to make the input field larger */
+    border: 1px solid #ccc;
+    border-radius: 0.5vw;
+    box-sizing: border-box;
+    cursor: pointer;
+  }

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+
+.categories-container {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: space-around;
+  padding: 5vh 4vw;
+}
+
+.category {
+  flex: 1;
+  margin: 0 5vw;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+a.category-heading{
+  background-color: #c8c4c4;
+  padding: 2vh;
+  border-radius: 1vw;
+  font-size: 6vh;
+  transition: background 0.3s ease, transform 0.3s ease;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Remove the background color transition on hover */
+.category h2:hover {
+  background: linear-gradient(135deg, #ff9800, #ff5722);
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.category ul {
+  list-style-type: none;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.category li {
+  margin: 1vh 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.category a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 2vh;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1vh 1vw;
+  display: inline-block;
+  border-radius: 1vw;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.category a:hover {
+  background: linear-gradient(135deg, #ff9800, #ff5722);
+  color: #fff;
+  transform: scale(1.05);
+}
+@media screen and (max-width:480px) {
+
+  
+  .categories-container {
+    display: flex;
+    justify-content: space-around;
+ display: grid;
+    padding: 5vh 10vw;
+  }
+  
+  .category {
+    flex: 1;
+    margin: 0 5vw;
+    text-align: center;
+  }
+  
+  .category h2 {
+    background-color: #f0f0f0;
+    padding: 2vh;
+    border-radius: 1vw;
+    font-size: 3vh;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Remove the background color transition on hover */
+  .category h2:hover {
+    background: linear-gradient(135deg, #ff9800, #ff5722);
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+  .category ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .category li {
+    margin: 3vh 0;
+  }
+  
+  .category a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 2vh;
+    padding: 1vh 1vw;
+    display: inline-block;
+    border-radius: 1vw;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .category a:hover {
+    background: linear-gradient(135deg, #ff9800, #ff5722);
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+  
+}

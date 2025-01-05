@@ -1,0 +1,268 @@
+/* Layout container */
+.courses-container {
+  display: grid;
+
+  height: auto;
+  padding: 2vh 2vw;
+}
+
+/* Filter box styles (Static for larger screens) */
+.filter-box {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 2vh 1vw;
+  height: auto;
+  position: relative; /* Ensures it stays within the layout */
+  transform: none; /* No sliding effect on larger screens */
+  transition: none; /* No animation for larger screens */
+}
+
+/* Courses content area */
+.courses-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Two columns of equal width */
+  grid-auto-rows: min-content; /* Ensure rows take only the required height */
+  margin: 0 5vw; /* Horizontal margin */
+  gap: 20px; /* Add consistent spacing between items */
+  height: auto; /* Let height adjust automatically based on content */
+  align-items: start; /* Align items to the top of their grid cells */
+  justify-items: start; /* Align items to the start of their cells */
+}
+
+/* Empty state */
+.empty {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vh; /* Space between buttons */
+  padding: 1vh 0; /* Vertical padding */
+  color: #fff; /* White text */
+  border-radius: 1vh;
+}
+
+.pagination button {
+  background-color: #ff4500; /* Orangered background */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 0.5vh;
+  padding: 0.5vh 1vh;
+  font-size: 1vw;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.pagination button:hover {
+  background-color: #ff6347; /* Lighter orangered on hover */
+  transform: scale(1.1); /* Slightly enlarge */
+}
+
+.pagination button:disabled {
+  background-color: #444; /* Dark gray for disabled */
+  cursor: not-allowed;
+}
+
+.pagination .page-button.active {
+  background-color: #ff4500; /* Active page in orangered */
+  font-weight: bold;
+  border: 0.2vw solid #fff; /* White border for active */
+}
+
+.pagination .ellipsis {
+  color: #ff4500; /* Orangered ellipsis */
+  font-size: 1vh;
+  font-weight: bold;
+  user-select: none;
+}
+
+/* Filter and Sort Buttons for Small Screens */
+.filter-sort-buttons {
+  display: none;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Filters Sidebar for Smaller Screens */
+/* General Layout Container */
+.courses-container {
+  display: grid;
+  grid-template-columns: 20vw 1fr; /* Sidebar and content */
+  grid-gap: 2vw;
+  height: auto;
+  padding: 2vh 2vw;
+  margin: 0 auto; /* Center align container */
+}
+
+/* Main Courses Content Area */
+.main-courses-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Courses Content Grid */
+.courses-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Two-column layout */
+  gap: 3vw;
+  width: 100%;
+  justify-items: center;
+}
+
+/* Empty State */
+.empty {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vh;
+  padding: 1vh 0;
+  color: #fff;
+}
+
+.pagination button {
+  background-color: #ff4500;
+  color: #fff;
+  border: none;
+  border-radius: 0.5vh;
+  padding: 0.5vh 1vh;
+  font-size: 1vw;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.pagination button:hover {
+  background-color: #ff6347;
+  transform: scale(1.1);
+}
+
+.pagination button:disabled {
+  background-color: #444;
+  cursor: not-allowed;
+}
+
+.pagination .page-button.active {
+  background-color: #ff4500;
+  font-weight: bold;
+  border: 0.2vw solid #fff;
+}
+
+.page-info-courses{
+  background-color: black;
+  color: white;
+  padding: 0.5vh 1vh;
+  border-radius: 1vh;
+}
+
+.pagination .ellipsis {
+  color: #ff4500;
+  font-size: 1vh;
+  font-weight: bold;
+  user-select: none;
+}
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 480px) {
+  .courses-container {
+    grid-template-columns: 2fr; /* Single column layout */
+    grid-gap: 0vw;
+    padding: 2vh 5vw;
+  }
+
+  .main-courses-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .filter-title {
+    text-align: center;
+    font-size: 1.5vh;
+    color: white;
+    margin-bottom: 2vh;
+    font-weight: 700;
+}
+  .courses-content {
+    grid-template-columns: repeat(2, 1fr); /* Single-column for items */
+    gap: 10px; /* Reduce spacing */
+    justify-items: center;
+  }
+
+  .filter-box {
+    position: fixed; /* Stays fixed on the screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 1000;
+    transform: translateX(-100%); /* Initially hidden */
+    transition: transform 0.3s ease;
+    overflow-y: auto; /* Ensure vertical scrolling */
+    padding: 20px; /* Adds some spacing */
+    box-sizing: border-box; /* Prevents padding from breaking layout */
+  }
+  
+  .filter-box.show-filter {
+    transform: translateX(0); /* Slide in from the left */
+  }
+  
+  .filter-box-content {
+    min-height: 150%; /* Ensures content spans the full height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Keeps top and bottom content visible */
+  }
+  
+  .responsive-buttons {
+        display: flex;
+        position: fixed;
+        bottom: 1px;
+        left: 0;
+        right: 0;
+        justify-content: space-around;
+        padding: 1vh;
+        background-color: #f9f9f9;
+        border-top: 2px solid black;
+        z-index: 1001;
+        margin-bottom: 8vh;
+  }
+
+  .responsive-buttons button {
+    font-size: 2vh;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: white;
+    padding: 1vh 1vh;
+    appearance: none;
+    color: inherit; /* Inherits color from parent or explicitly set it */
+    border: none; /* Removes the default border */
+    cursor: pointer; /* Ensures it shows as clickable */
+  }
+  
+.pagination button {
+  background-color: #ff4500;
+  color: #fff;
+  border: none;
+  border-radius: 0.5vh;
+  padding: 0.5vh 1vh;
+  font-size: 2vh;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+}

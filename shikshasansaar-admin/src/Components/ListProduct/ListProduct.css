@@ -1,0 +1,89 @@
+/* Main Product List Styles */
+.list-product {
+  width: 330vw;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.list-product-head {
+  display: grid;
+  grid-template-columns: repeat(40, 50fr);
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5vh;
+  padding: 1vh 0;
+  border-bottom: 1px solid #ddd;
+}
+
+
+
+.list-product-format-main {
+  display: grid;
+  grid-template-columns:repeat(40, 50fr);
+  align-items: center;
+  text-align: center;
+  font-size: 1.5vh;
+  padding: 1vh 0; /* Reduced padding */
+  border-bottom: 1px solid #ddd;
+}
+
+.list-product-format img {
+ width: 12vh;
+height: 12vh;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.list-product-format button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.list-product-format button img {
+  max-width: 2.5vw;
+  max-height: 2.5vh;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ddd;
+  margin: 0;
+}
+
+/* Old Price Styling */
+.product-old-price {
+  font-size: 1.6vh; /* Adjust font size */
+  color: #777;
+  text-decoration: line-through; /* Line through old price */
+  margin-right: 1vw; /* Adjust space between old and new price */
+}
+
+input.editingProductinput{
+  width: 5vw;
+    margin: 1vh 1vh;
+    padding: 2vh 2vh;
+    text-align: center;
+}
+
+p.heighteditingproduct , .list-product-main input {
+  height: 10vh;
+  overflow: hidden;
+  width: 20vw;
+}
+
+.list-product-main textarea{
+  height: 10vh;
+  overflow: hidden;
+  width: 16vw;
+}
+
+
+p.heighteditingproductimage{
+  width: 20vw;
+  height: 12vh;
+    object-fit: cover;
+}
+

@@ -1,0 +1,269 @@
+/* Navbar Styling */
+.firstnav {
+    background-color: #ffffff;
+    width: 100vw;
+    overflow-x: hidden;
+   
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2); */
+    user-select: none;
+}
+
+/* Logo Styling */
+.logo {
+    cursor: pointer; /* Added cursor for interaction */
+}
+
+.logo-img {
+    height: 8vh;
+    width: 8vh;
+    margin-left: 2vh;
+    margin-top: 2vh;
+}
+
+
+/* Profile, Wishlist, and Cart Icons */
+.login-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 2vw;
+    font-family: "Poppins", serif;
+    font-size: 2.5vh;
+    font-weight: 800;
+    margin-right: 5vh;
+}
+
+.login-profile li {
+    padding: 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+.login-profile li.login {
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 3vh;
+    padding: 1vh 1vh;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+
+.login-profile li.login:hover {
+    background: var(--color3);
+    color: black;
+}
+.cart {
+    position: relative; /* Position relative to place the number */
+    display: inline-block; /* Makes the cart a block element */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+}
+
+.wishlist {
+    position: relative; /* Position relative to place the number */
+    display: inline-block; /* Makes the cart a block element */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+
+}
+
+li.wishlist img{
+    height: 6vh;
+}
+
+li.profile img{
+    height: 6vh;
+}
+
+
+
+/* Logout Modal */
+.logout-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logout-modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.logout-modal-content h3 {
+    margin-bottom: 20px;
+}
+
+.logout-modal-content button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: var(--color3);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout-modal-content button:hover {
+    background-color: darkorange;
+}
+
+.logout-modal-content button:last-child {
+    background-color: #9da0a2;
+}
+
+.logout-modal-content button:last-child:hover {
+    background-color: #5a6268;
+}
+
+/* Responsive Styles for max-width 480px */
+@media (max-width: 1024px) {
+    .logo-img {
+        height: 6vh;
+        width: 7vh;
+        display: block;
+        margin-left: 0;
+    }
+    .login-profile {
+        display: none; /* Hide on mobile */
+    }
+
+    .firstnav{
+        display: none;
+    }
+
+    .nav-content {
+        display: none; /* Hide on mobile */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 10px 0;
+        z-index: 100;
+    }
+
+
+
+    .search-bar-first{
+        display: none;
+    }
+
+    li.wishlist img{
+        height: 4vh;
+    }
+    
+    li.profile img{
+        height: 4vh;
+    }
+    .shopcart li.shopcart img {
+        height: 4vh;
+        cursor: pointer;
+    }
+
+    .cart-wishlist-number {
+        position: absolute;
+        right: -1vh;
+        top: 0.5vh;
+        border: 1px solid black;
+        z-index: 20;
+        background-color: white;
+        color: black;
+        border-radius: 50%;
+        width: 11px;
+        height: 11px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 9px;
+        font-weight: bold;
+    }
+
+    .cart-cart-number {
+        position: absolute;
+        top: 3vh;
+        right: -1vh;
+        border: 1px solid black;
+        z-index: 20;
+        background-color: white;
+        color: black;
+        border-radius: 50%;
+        width: 11px;
+        height: 11px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 9px;
+        font-weight: bold;
+    }
+
+    .mobile-login-profile li.login {
+        border: 2px solid black;
+        background-color: white;
+        border-radius: 3vh;
+        padding: 1vh 1vh;
+        font-weight: 400;
+        margin-bottom: 10px;
+        display: none;
+    }
+}
+
+.search-bar-first {
+    position: relative;
+    width: 50%;
+}
+
+.search-input-first {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    outline: none;
+    font-size: 2vh;
+}
+
+.search-results-container {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    max-height: 60vh;
+    overflow-y: auto;
+    margin-top: 1vh;
+    
+}
+
+.no-results {
+    padding: 10px;
+    text-align: center;
+    color: #888;
+}
+
+/* Ensure ProductItemProductDisplay component fits in */
+.search-results-container > div {
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+    transition: background 0.3s ease;
+}
+
+.search-results-container > div:hover {
+    background: #f9f9f9;
+    cursor: pointer;
+}
+

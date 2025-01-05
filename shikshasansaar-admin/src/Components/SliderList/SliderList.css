@@ -1,0 +1,71 @@
+.slider {
+    width: 80vw;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  }
+  
+  .slider-head {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.0vh;
+    padding: 1vh 0;
+    display: flex;
+    justify-content: space-around;
+   
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .slider-head p {
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3vh;
+  }
+  
+  .slider-main {
+    display: flex;
+  flex-direction: column;
+  }
+  
+  .slider-main hr {
+    border: none;
+    border-top: 1px solid #ddd; /* Border line between items */
+    margin: 10px 0;
+  }
+  
+  .slider-format-main {
+    display: grid;
+    grid-template-columns:80% 20%;
+     align-items: center;
+    text-align: center;
+    padding: 1vh 0; /* Reduced padding */
+    border-bottom: 1px solid #ddd;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slider-format-main img {
+    height: 30vh; /* Adjust height of the image as needed */
+    width: 30vw;   /* Ensure image fits within the 90% area */
+     /* Ensures image fits within the specified dimensions */
+  }
+  
+  .slider-format-main button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slider-format-main button img {
+    height: 2vh; /* Adjust size of the remove icon as needed */
+    width: 2vh  /* Adjust size of the remove icon as needed */
+  }
+  
+
+  

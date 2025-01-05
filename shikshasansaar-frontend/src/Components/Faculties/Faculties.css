@@ -1,0 +1,65 @@
+.faculties-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+  justify-content: center; /* Center items horizontally if fewer than 5 in the last row */
+}
+
+.main-fac{
+  margin: 4vh 4vh;
+  border: 1px solid black;
+}
+
+.faculties-container > div {
+  flex: 1 1 calc(20% - 20px); /* Each item takes 20% of the row width minus the gap */
+  box-sizing: border-box; /* Ensure padding and borders are included in the item's total width */
+}
+
+.show-all-button-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+
+}
+
+.show-all-button-1 {
+  background-color: #e6d8b8; /* Initial cream background */
+  padding: 2vh 2vh;
+  border: 2px solid black;
+  width: 100%;
+  font-size: 2.5vh;
+  cursor: pointer;
+  transition: background-color 0.5s ease; /* Smooth transition for background color */
+}
+
+.show-all-button-1:hover {
+  background-color: #FF4500; /* Orange-red on hover */
+}
+
+@media screen and (max-width: 1024px) {
+  .faculties-container > div {
+    flex: 1 1 calc(33.33% - 20px); /* 3 items per row on smaller screens */
+  }
+
+  .show-all-button-1 {
+    padding: 1.5vw 1.5vw;
+    font-size: 2vh;
+    width: 100%;
+    color: black;
+    background-color: initial; /* Removes default background */
+    background: none; /* Ensures no background is applied */
+    color: inherit; /* Ensures button text color matches your design */
+    border: none; /* Removes any default borders */
+    appearance: none; /* Resets the native button appearance */
+    -webkit-appearance: none; /* Specific for Safari */
+    -moz-appearance: none; /* Specific for Firefox */
+    text-decoration: none; /* Ensures no underline appears */
+}
+
+ .main-fac{
+  margin: 1vh 1vh;
+  border: 1px solid black;
+}
+}
+
+

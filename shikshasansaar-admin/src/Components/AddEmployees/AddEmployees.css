@@ -1,0 +1,119 @@
+/* General Container */
+.employee-form-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: "poppins" , serif;
+}
+
+/* Heading */
+.employee-form-heading {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  font-family: "poppins" , serif;
+}
+
+/* Form Styling */
+.employee-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: "poppins" , serif;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  font-family: "poppins" , serif;
+}
+
+.form-label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #555;
+  font-family: "poppins" , serif;
+}
+
+.form-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s;
+  font-family: "poppins" , serif;
+}
+
+.form-input:focus {
+  border-color: #007bff;
+  font-family: "poppins" , serif;
+}
+
+/* Fieldset Styling */
+.form-fieldset {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+  background-color: #fff;
+  font-family: "poppins" , serif;
+}
+
+.fieldset-legend {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+  font-family: "poppins" , serif;
+
+}
+
+/* Feature options in a vertical layout */
+.features-grid {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 10px;
+  margin-left: 20px;
+  font-family: "poppins" , serif;
+
+}
+
+.feature-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-family: "poppins" , serif;
+
+}
+
+.feature-checkbox {
+  transform: scale(1.2);
+  margin-right: 10px;
+  font-family: "poppins" , serif;
+}
+
+/* Submit Button */
+.form-submit-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: "poppins" , serif;
+}
+
+.form-submit-button:hover {
+  background-color: #0056b3;
+  font-family: "poppins" , serif;
+}

@@ -1,0 +1,14 @@
+.BreadCrum{
+    margin-top: 2vh;
+    font-size: 2vh;
+    font-family: "poppins", serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 2vw;
+}
+
+@media screen and (max-width:480px) {
+    .BreadCrum{
+        font-size: 1.5vh;
+    }
+}

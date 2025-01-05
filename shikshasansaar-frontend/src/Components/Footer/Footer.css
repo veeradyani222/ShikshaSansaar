@@ -1,0 +1,248 @@
+.footer {
+    background-color: #000; /* Black background */
+    color: #ccc; /* Whitish text */
+    padding: 5vh 5vw;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20vh;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+.contact-info, .othercontent, .newsletter, .social-media {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4vh;
+}
+
+/* Flexbox Layout for Other Content (Categories, Faculty, Nav) */
+.othercontent {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+}
+
+.routes-nav, .routes-categories, .routes-faculty {
+    width: 30vw;
+    text-align: center;
+    font-size: 1.8vh;
+}
+
+li.footer-headings {
+    text-align: center;
+    font-size: 2.5vh;
+    list-style-type: none;
+}
+
+input.newsletter-name{
+width: 30vw;
+}
+
+/* Links Styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 1vh 0;
+}
+
+.routes-nav a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 1.8vh;
+    transition: color 0.3s;
+}
+
+.routes-nav a:hover,
+.routes-nav ul li:hover,
+.routes-categories li:hover {
+    color: #fff; /* Bright white on hover */
+}
+
+/* Subscribe Input and Button */
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter-input {
+    width: 30vw;
+    height: 5vh;
+    padding: 1vh;
+    margin-bottom: 1vh;
+    border-radius: 0.5vh;
+    border: 1px solid #ccc;
+    background-color: #111;
+    color: #ccc;
+    font-size: 1.6vh;
+}
+
+.newsletter-submit {
+    background-color: #222;
+    color: #ccc;
+    border: 1px solid #444;
+    padding: 1.5vh 3vw;
+    border-radius: 0.5vh;
+    cursor: pointer;
+    font-size: 1.8vh;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0 auto; /* Center the button */
+    width: 20vw;
+}
+
+.newsletter-submit:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+/* Subscribe Message Styling */
+.newsletter-message {
+    color: #4caf50; /* Success message green */
+    font-size: 1.8vh;
+    margin-top: 2vh;
+}
+
+.newsletter-message.error {
+    color: #f44336; /* Error message red */
+}
+
+/* Contact Info Styling */
+.contact-heading {
+    font-size: 4.2vh;
+    margin-bottom: 1.5vh;
+}
+
+.contact-item {
+    font-size: 2.8vh;
+    margin: 0.5vh 0;
+}
+
+/* Social Media Styling */
+.social-heading {
+    font-size: 2.2vh;
+    margin-bottom: 1.5vh;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    flex-direction: row;
+}
+
+.social-link {
+    font-size: 2.5vh;
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: #fff; /* Bright white on hover */
+}
+
+/* Footer Bottom Styling */
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.footer-text {
+    font-size: 1.6vh;
+    color: #aaa;
+}
+
+.routes-categories {
+    list-style-type: none;
+    font-size: 1.8vh;
+}
+
+form.footer-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+    margin-top: 10vh;
+}
+
+.logo-section {
+    height: 10vh;
+    width: 10vh;
+}
+
+.logo-section img {
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    /* Flexbox Layout for Other Content (Categories, Faculty, Nav) */
+    .othercontent {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5vh;
+    }
+
+    .routes-nav, .routes-categories, .routes-faculty {
+        width: 50vw;
+    }
+
+    li.footer-headings {
+        font-size: 2vh;
+    }
+
+    .routes-nav a {
+        font-size: 2.0vh;
+    }
+
+    .newsletter-input {
+        width: 61vw;
+        font-size: 2vh;
+        text-align: center;
+        margin-top: 3vw;
+    }
+
+    .newsletter-submit {
+        font-size: 2.8vh;
+        width: 45vw;
+    }
+
+    .contact-item {
+        margin: 2.5vh 0;
+        padding: 1.0vh 1.5vh;
+    }
+
+    input.newsletter-name{
+        width: 40vw;
+        font-size: 3vw;
+        }
+
+    .social-icons {
+        gap: 10vw;
+        flex-direction: row;
+    }
+
+    .footer-text {
+        font-size: 2.6vh;
+    }
+
+    form.footer-form {
+        width: 88vw;
+        padding: 1vh;
+        justify-content: center;
+        align-items: center;
+    }
+}

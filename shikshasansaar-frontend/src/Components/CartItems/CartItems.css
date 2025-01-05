@@ -1,0 +1,608 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+.cartitem-wrapper {
+    display: flex;
+    border: 1px solid #e0e0e0;
+    border-radius: 2vh;
+    background-color: #ffffff;
+    padding: 5vh;
+    margin-bottom: 1.5vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cartitem-wrapper:hover {
+    transform: translateY(-2px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.cartitem-content {
+    display: flex;
+    width: 100%;
+}
+
+.cartitem-left {
+    flex: 0 0 5vw; /* Fixed width for image */
+    margin-right: 2vw; /* Space between image and details */
+}
+
+.cartitem-product-icon {
+    width: 20vw; /* Full width for responsiveness */
+    height: 20vw; /* Maintain aspect ratio */
+    border-radius: 8px; /* Match border radius */
+    cursor: pointer; /* Pointer cursor on hover */
+    object-fit: cover; /* Cover to maintain aspect ratio */
+}
+
+.cartitem-right {
+    flex-grow: 1; /* Take remaining space */
+}
+
+.rzp-popup {
+    width: 100% !important; /* Full width of the viewport */
+    height: auto !important; /* Adjust height automatically */
+    max-width: 600px; /* You can set a maximum width to prevent it from becoming too large */
+}
+
+.cartitem-name {
+    font-size: 2vh;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;}
+
+.cartitem-price,
+.cartitem-finalprice {
+    font-size: 2.5vh;
+    color: #000000;
+    margin-bottom: 1vh;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.cartitem-finalprice{
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.label {
+    font-weight: 400; /* Medium weight for labels */
+    color: #000; /* Slightly lighter color */
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 3vh;
+}
+
+.cartitem-quantity {
+    display: flex; /* Flex for quantity buttons */
+    align-items: center; /* Center align */
+    gap: 1vh; /* Space between elements */
+    margin-bottom: 10px; /* Space below quantity section */
+    font-weight: 400;
+}
+
+.quantity-button {
+padding: 1vh 1vh;
+font-size: 2vh;
+border-radius: 0vh;
+border: 1px solid gray;
+cursor: pointer;
+
+}
+
+.quantity-button:disabled {
+    background-color: #cccccc; /* Disabled state color */
+    cursor: not-allowed; /* Not allowed cursor */
+}
+
+.cartitem-quantity-display {
+    font-size: 2vh; /* Standard size for quantity display */
+    padding: 1vh 1vh;
+    border: 1px solid #ddd; /* Border around quantity display */
+    border-radius: 0vh; /* Rounded corners */
+}
+
+.cartitem-remove {
+    margin-top: 1vh; /* Space above remove button */
+    padding: 2vh; /* Padding for button */
+    font-size: 2vh;
+    background-color: white; /* Red background */
+    color: black; /* White text */
+    border: 2px solid black; /* No border */
+    border-radius: 1vh; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth background color change */
+}
+
+.cartitem-remove:hover{
+    background-color:#f76206
+} 
+
+
+.coupon-section {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid black;
+    width: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2vh 2vh;
+}
+
+.coupon-input {
+    width: 10vw;
+    padding: 0.8vh;
+    font-size: 1vw;
+    border: 2px solid #007bff;
+    border-radius: 0.8vh;
+    margin-bottom: 1.5vh;
+    transition: border-color 0.2s ease;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.coupon-input:focus {
+    outline: none;
+    border-color: #0056b3;
+}
+
+.apply-coupon-button {
+    padding: 0.8vh 1.5vw;
+    font-size: 1vw;
+    background: linear-gradient(45deg, #FF6F00, #FF8C00, #FFB74D);
+    color: black;
+    border: none;
+    border-radius: 0.8vh;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 1.5vh; /* Margin between input and button */
+}
+
+.apply-coupon-button:hover {
+    background-color: #f76206;
+    transform: scale(1.05);
+}
+
+/* Cart Total Section */
+.cart-total {
+    font-size: 1vw;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1.5vh; 
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.buy-button {
+    padding: 1vh 2vw;
+    margin-top: 3vh;
+    font-size: 1vw;
+    background: orangered;
+    color: black;
+    border: 1 px solid black;
+    border-radius: 0.8vh;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.buy-button:hover {
+    background-color: #e84e0c;
+    transform: scale(1.05);
+}
+
+.cartitem-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+}
+.cartitem-details-child{
+    padding: 1vh 2vh;
+    border: 1px solid black;
+    margin-bottom: 2vh;
+    background: linear-gradient(45deg, #FFA040, #FFB74D, #FFD180);
+    font-weight: 600;
+    font-family: "Roboto Condensed", sans-serif;
+    
+
+
+}
+
+.cartitem-finalprice{
+    font-size: 3vh;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.cart-summary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-summary-table {
+    width: 80%;
+    margin-left:20vw;
+    border-collapse: collapse;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.cart-summary-table th, .cart-summary-table td {
+    border: 1px solid #ddd;
+    padding: 1vh;
+}
+
+.cart-summary-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    font-size: 1.5vh;
+}
+
+.cartitem-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1vh;
+}
+
+.cartitem-table td {
+    padding: 1vh 1vh;
+    border: 1px solid #ddd;
+    font-size: 1.5vh;
+}
+
+.cartitem-table-header {
+    font-weight: bold;
+    background-color: #f4f4f4;
+}
+
+.cartitem-table td:last-child {
+    text-align: left;
+}
+
+
+.cart-summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto; /* Full viewport height */
+    overflow: hidden; /* Prevent full screen scrolling */
+}
+
+.cart-summary-table-container {
+    width: 80%;
+    height:auto;
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 1px solid #ddd; /* Optional: Add a border for the scroll container */
+}
+
+.cart-summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.cart-summary-table th, .cart-summary-table td {
+    border: 1px solid #ddd;
+    padding: 1vh;
+}
+
+.cart-summary-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    font-size: 1vw;
+    position: sticky;
+    top: 0; /* Keep header fixed during scroll */
+    z-index: 1;
+}
+
+.cart-summary-table td {
+    font-size: 1vw;
+}
+
+.cart-summary-table td:last-child {
+    text-align: left;
+}
+
+
+.cart-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    overflow: hidden;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.cart-table-container {
+    width: 90%;
+    max-height: 70vh; /* Restrict table height */
+    overflow-y: auto; /* Enable scrolling for the table */
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.cart-table th, .cart-table td {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.cart-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    position: sticky;
+    top: 0; /* Sticky header for scrolling */
+}
+
+.cart-summary-label {
+    font-weight: bold;
+    text-align: right;
+}
+
+
+.buy-btn-cart{
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.empty-cart-message-main{
+width: 100vw;
+justify-content: center;
+align-items: center;
+margin: 20vh auto;
+display: flex;
+}
+
+.empty-cart-message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid black;
+    padding: 3vh 3vh;
+    margin: 2vh 2vh;
+}
+.view-courses{
+    color: black;
+    background-color: orangered;
+    padding: 2vh 2vh;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:480px) {
+    .cartitem-wrapper {
+        display: flex;
+        border: 1px solid #e0e0e0;
+        border-radius: 2vw; /* Changed to vw */
+        background-color: #ffffff;
+        padding: 7vw; /* Changed to vw */
+        margin-bottom: 3.5vw; /* Changed to vw */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+        align-items: center; /* Center items vertically */
+    }
+    
+    .cartitem-wrapper:hover {
+        transform: translateY(-2px); /* Lift effect on hover */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+    }
+    
+    .cartitem-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .cartitem-details {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1vw;
+    }
+
+    .cartitem-details-child {
+        padding: 1vh 2vh;
+        border: 1px solid black;
+        margin-bottom: 1vh;
+        background: linear-gradient(45deg, #FFA040, #FFB74D, #FFD180);
+        font-weight: 600;
+        font-size: 1.5vh;
+        text-align: center;
+    }
+    .cartitem-price, .cartitem-finalprice {
+        font-size: 5vw;
+        color: #555;
+        margin-bottom: 0vw;
+        font-family: serif;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .cartitem-left {
+        flex: 0 0 17vw; /* Increased width for image section */
+        margin-right: 4vw; /* Space between image and details */
+        display: flex; /* Center image */
+        justify-content: center; /* Center image horizontally */
+    }
+    
+    .cartitem-product-icon {
+        width: 50%; /* Full width for responsiveness */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 1vw; /* Match border radius */
+        cursor: pointer; /* Pointer cursor on hover */
+        object-fit: cover; /* Cover to maintain aspect ratio */
+    }
+    
+    .cartitem-right {
+        flex-grow: 1; /* Take remaining space */
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        justify-content: center; /* Center content */
+    }
+    
+    .cartitem-name {
+        font-size: 1.5vh; /* Increased font size */
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 3vw; /* Space below name */
+        text-align: center; /* Center text */
+    }
+
+    .cartitem-price,
+    .cartitem-finalprice {
+        font-size: 6vw; /* Increased font size */
+        color: #555;
+        margin-bottom: 3vw; /* Space below price */
+        font-family: serif; /* Use serif font */
+        text-align: center; /* Center text */
+    }
+    
+    .label {
+        font-weight: 500; /* Medium weight for labels */
+        color: #000; /* Slightly lighter color */
+        font-family: "Poppins"; /* Use Poppins font */
+        font-size: 5vw; /* Adjusted size for labels */
+    }
+    
+    .cartitem-quantity {
+        display: flex;
+        align-items: center;
+        gap: 1vh;
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+    
+    .quantity-button {
+        padding: 1vh 1vh;
+        font-size: 2vh;
+        border-radius: 0vh;
+    }
+    
+    .quantity-button:disabled {
+        background-color: #cccccc; /* Disabled state color */
+        cursor: not-allowed; /* Not allowed cursor */
+    }
+    
+    .cartitem-quantity-display {
+        font-size: 2vh; /* Standard size for quantity display */
+        padding: 1vh 1vh;
+        border: 1px solid #ddd; /* Border around quantity display */
+        border-radius: 0vh; /* Rounded corners */
+    }
+    
+    .cartitem-remove {
+        margin-left: 25vw;
+        margin-right: 20vw;
+        padding: 1vh;
+        font-size: 2vh;
+        background-color: white;
+        color: black;
+        border: 2px solid black;
+        border-radius: 1vh;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    
+    .cartitem-remove:hover{
+        background-color:#f76206
+    } 
+
+    
+.coupon-section {
+    margin-top: 3vh;
+     width: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.coupon-input {
+        width:20vh;
+        padding: 0.8vh;
+        font-size: 4vw;
+        border: 2px solid #007bff;
+        border-radius: 0.8vh;
+        margin-bottom: 1.5vh;
+        transition: border-color 0.2s ease;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+}
+
+.coupon-input:focus {
+    outline: none;
+    border-color: #0056b3;
+}
+
+.apply-coupon-button {
+    padding: 0.8vh 1.5vw;
+    font-size: 4vw;
+    background: linear-gradient(45deg, #FF6F00, #FF8C00, #FFB74D);
+    color: black;
+    border: none;
+    border-radius: 0.8vh;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 1.5vh; /* Margin between input and button */
+}
+
+.apply-coupon-button:hover {
+    background-color: #f76206;
+    transform: scale(1.05);
+}
+
+/* Cart Total Section */
+.cart-total {
+    font-size: 5vw;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1.5vh; 
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.buy-button {
+    padding: 1vh 2vw;
+    font-size: 3vh;
+    background: orangered;
+    color: black;
+    border: 1px solid black;
+    border-radius: 0.8vh;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 3vh auto;
+}
+
+.buy-button:hover {
+    background-color: #e84e0c;
+    transform: scale(1.05);
+}
+
+.cart-table th, .cart-table td {
+    border: 1px solid #ddd;
+    padding: 2vh 2vh;
+    font-size: 1.5vh;
+}
+
+}    

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Cedarville+Cursive&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+  --color1:#FFFFFF;
+  --color2:#74B27B; 
+  --color3:#FACF55 ;
+  --color5:#E96950 ;
+  --color6:#FDF6EF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins",serif;
+
+}
+
+body{
+  overflow-x: hidden;
+  padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .loading-main-whole-page {
+    display: flex;
+    justify-content: center; /* Centers the loading div horizontally */
+    align-items: center; /* Vertically centers the content */
+    width: 100vw; /* Ensure it takes up full viewport width */
+    height: 100vh; /* Ensure it takes up full viewport height */
+    position: absolute; /* Use absolute to make it fixed relative to the page */
+    top: 0;
+    left: 0;
+    z-index: 9999; /* Ensure it's on top */
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: Add slight transparency */
+  }
+  
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loading img, .loading div {
+    width: 100px; /* Adjust size of the loading icon */
+    height: 100px; /* Adjust size of the loading icon */
+    margin: 0 auto;
+  }
+  
+  
+
+  @media screen and (max-width:480px){
+    body {
+      margin: 0;
+      overflow-x: hidden;
+  }
+  
+    
+  }

@@ -1,0 +1,13 @@
+.terms-containers{
+    margin-top: 5vh;
+    padding: 3vw 3vw;
+}
+
+p.terms{
+    display: flex;
+    font-size: 2.5vh;
+    font-family: "poppins" , serif;
+    font-weight: 500;  
+    margin-left: 4vh;
+    margin-right: 4vh;
+}

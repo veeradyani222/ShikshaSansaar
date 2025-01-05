@@ -1,0 +1,33 @@
+/* Default positioning: Contact appears above FirstNavbar */
+.header-container {
+    position: relative;
+  }
+  
+  .contact-component {
+    position: relative;
+    z-index: 10; /* Ensure visibility */
+  }
+  
+  .first-navbar {
+    position: relative;
+    z-index: 5;
+  }
+  
+  /* Media Query for Screens <= 480px */
+  @media screen and (max-width: 480px) {
+    .header-container {
+      display: flex;
+      flex-direction: column-reverse; /* Reverse the order of the child elements */
+    }
+  
+    .contact-component {
+      order: 2; /* Ensure Contact moves below */
+      position: static; /* Remove absolute positioning */
+      margin-top: 10px; /* Add spacing */
+    }
+    
+    .first-navbar {
+      order: 1; /* FirstNavbar stays above */
+    }
+  }
+  

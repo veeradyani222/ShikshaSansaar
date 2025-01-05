@@ -1,0 +1,57 @@
+/* Cart Data Section */
+.user-cart-data {
+        display: grid;
+        gap: 43px;
+        padding: 18px;
+        width: 80vw;
+  }
+  
+  /* Cart Data Header */
+  .cart-data-grid-header {
+    display: grid;
+    grid-template-columns: repeat(11, 5fr); /* 8 equal columns */
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+  }
+  
+  /* Cart Data Rows */
+  .cart-data-grid-row {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr); /* Matches the header */
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cart-data-grid-row:nth-child(odd) {
+    background-color: #f7faff; /* Alternate row coloring */
+  }
+  
+  .cart-data-grid-row:hover {
+    background-color: #e9f5ff; /* Highlight row on hover */
+  }
+  
+  /* Individual cells */
+  .cart-data-grid-cell {
+    padding: 5px;
+    overflow-wrap: break-word; /* Prevent text overflow */
+  }
+  
+  .cart-data-grid-cell a {
+    color: #007bff;
+    text-decoration: underline;
+  }
+  
+  .cart-data-grid-header,
+  .cart-data-grid-cell {
+    text-align: left;
+  }
+  
+.cart-data-table td{
+  padding: 2vh 2vh;
+}
+  

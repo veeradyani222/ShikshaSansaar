@@ -1,0 +1,164 @@
+.LoginSignup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130vh;
+    background-color: #ffffff;
+  }
+  
+  .LoginSignupContainer {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .LoginSignupFields input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .LoginSignupFields input:focus {
+    border-color: #f48024; /* Change to your preferred focus color */
+  }
+  
+ .LoginSignup button {
+    background-color: #f48024;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .LoginSignup button:hover {
+    background-color: #d76a1a; /* Slightly darker on hover */
+  }
+  
+  .LoginSignup_Agreement {
+    margin: 20px 0;
+    font-size: 12px;
+    color: #555;
+  }
+  
+  .LoginSignup_Agreement .update {
+    color: #f48024;
+    text-decoration: none;
+  }
+  
+  .LoginSignup_Agreement .update:hover {
+    text-decoration: underline;
+  }
+  
+
+  
+  .LoginSignup_Login {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  .LoginSignup_Login .updates {
+    color: #f48024;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .LoginSignup_Login .updates:hover {
+    text-decoration: underline;
+  }
+
+  .otp-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1vh auto;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    width: 200px;
+  }
+  
+  .otp-input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 150px;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .otp-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .otp-button:hover {
+    background-color: #45a049;
+  }
+  
+  .otp-success-message {
+    color: green;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .continue-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .continue-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .error {
+    color: darkred; 
+    font-size: 15px;
+    border: 2px solid darkred; 
+    border-radius: 5px;
+    background-color: rgba(255, 0, 0, 0.5);
+    text-align: center;
+}
+.success {
+  color: darkgreen; 
+  font-size: 15px;
+  text-align: center;
+  background-color: rgba(0, 128, 0, 0.3); 
+  padding: 10px; 
+  border: 2px solid darkgreen;
+  border-radius: 5px; 
+}
+
+  
+
+@media screen and (max-width:480px) {
+   .LoginSignupContainer {
+        width: 60%;
+      }
+
+   
+}

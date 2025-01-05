@@ -1,0 +1,78 @@
+.add-content-container {
+  width: 80vw; /* Responsive width */
+  margin: 0 auto;
+  padding: 2vw; /* Responsive padding */
+  font-family: Arial, sans-serif;
+}
+
+/* General form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh; /* Responsive gap between form elements */
+}
+
+/* Group container for form elements */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh; /* Gap between fields in the group */
+}
+
+/* Wrapper for each input field */
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Common styling for text inputs */
+.text-input {
+  padding: 1vw; /* Responsive padding */
+  border: 1px solid #ccc;
+  border-radius: 0.5vw; /* Responsive border radius */
+  font-size: 1vw; /* Responsive font size */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Specific styling for number inputs */
+.number-input {
+  padding: 1vw;
+  border: 1px solid #ccc;
+  border-radius: 0.5vw;
+  font-size: 1.5vw;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Button to add more fields */
+.add-more-btn {
+  background-color: #007bff;
+  width: 20vw;
+  color: white;
+  padding: 1vh 2vw; /* Responsive padding */
+  border: none;
+  border-radius: 0.5vw;
+  cursor: pointer;
+  font-size: 1vw;
+}
+
+/* Button styling for form submission */
+.submit-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 1vh 2vw;
+  border: none;
+  border-radius: 0.5vw;
+  cursor: pointer;
+  font-size: 1.5vw;
+}
+
+.submit-btn:hover,
+.add-more-btn:hover {
+  opacity: 0.8; /* Slightly reduce opacity on hover */
+}
+label{
+  font-size: 1.5vw;
+  font-weight: 700;
+}

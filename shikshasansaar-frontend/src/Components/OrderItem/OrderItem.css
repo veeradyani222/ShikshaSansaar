@@ -1,0 +1,198 @@
+.user-order {
+    width: 80vw;
+    background-color: #fff;
+    border-radius: 1.5vw;
+    box-shadow: 0 2vh 6vh rgba(0, 0, 0, 0.1);
+    padding: 2vh;
+    font-family: 'Arial', sans-serif;
+    margin: 4vh auto;
+  }
+  
+  .user-order .order-summary {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2vh;
+    padding: 2vh;
+
+  }
+  
+  .user-order .order-header-1 {
+    text-align: center;
+    padding: 2vh;
+    border-radius: 1vw;
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+    font-size: 1vw;
+  }
+  
+  .user-order .order-header {
+    font-size: 1vw;
+    color: #333;
+
+  }
+  
+  .user-order .order-header p {
+    font-size: 1vw;
+    color: #555;
+  }
+  
+  .user-order .products-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2vw;
+  }
+  
+  .user-order .product-details {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    width: 50vw;
+    justify-content: flex-start;
+  }
+  
+  .user-order .product-image {
+    width: 5vw;
+    height: 5vw;
+    object-fit: cover;
+
+  }
+  
+  .user-order .product-info p {
+    font-size: 1vw;
+    color: #333;
+  }
+  
+  .user-order .more-products p {
+    font-size: 1vw;
+    color: #888;
+  }
+  
+  .user-order .view-order-button {
+    background-color: #FF6F00;
+    color: #fff;
+    border: none;
+    padding: 1.5vh 3vw;
+    font-size: 1vw;
+    border-radius: 1vw;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 2vh;
+    transition: background-color 0.3s ease;
+  }
+  
+  .user-order .view-order-button:hover {
+    background-color: #FF8C00;
+  }
+
+  .user-order p.user-order-date{
+padding: 1vh 1vh;
+border: 2px solid #888;
+background-color:rgba(255, 165, 0, 0.4);  /* Adjust opacity as needed */;
+font-weight: 500;
+color: black;
+  }
+  
+  .user-order p.user-order-status{
+    padding: 1vh 1vh;
+    border: 2px solid #888;
+    background-color: rgb(144, 238, 144, 0.5);
+    font-weight: 500;
+    color: black;
+
+
+      }
+      
+      .user-order  p.user-order-amount{
+    padding: 1vh 1vh;
+    border: 2px solid #888;
+    background-color:rgba(255, 165, 0, 0.4);  /* Adjust opacity as needed */;
+    font-weight: 500;
+    color: black;
+
+      }
+
+      @media (max-width: 480px) {
+        .user-order {
+            width: 90%;  /* Ensures it takes the full width of the screen */
+            height: auto; /* Ensures it takes the full height of the screen */
+            padding: 5vw;  /* Padding for spacing */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden; /* Prevents overflow */
+            box-shadow: none;
+        }
+    
+        .user-order .order-header-1 {
+            font-size: 4vw;
+            gap: 2vh;
+            justify-content: center;
+            margin: 0; /* Ensures no margin/padding issues */
+            box-shadow: none;
+        }
+    
+        .user-order .order-header p {
+            font-size: 3.5vw;
+        }
+    
+        .user-order .products-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%; /* Ensure products list stays within screen width */
+            box-shadow: none;
+        }
+    
+        .user-order .product-details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2vw;
+            width: 100%;
+            box-shadow: none;
+        }
+        .user-order .more-products p {
+          font-size: 2vh;
+          color: #888;
+          box-shadow: none;
+        }
+    
+        .user-order .product-image {
+            width: 30vw;
+            height: 30vw;
+            object-fit: cover;
+            box-shadow: none;
+            max-width: 100%;  /* Prevents image from overflowing */
+        }
+    
+        .user-order .product-info p {
+            font-size: 3vw;
+            box-shadow: none;
+
+        }
+    
+        .user-order .view-order-button {
+            font-size: 3vw;
+            padding: 2vh 4vw;
+            width: 80%;  /* Button width adjusted to fit within the screen */
+            box-shadow: none;
+        }
+    
+        .user-order p.user-order-date,
+        .user-order p.user-order-status,
+        .user-order p.user-order-amount {
+          font-size: 2.5vw;
+          padding: 0vh 1vh;
+          margin: 0 auto;
+          box-shadow: none;
+          text-align: center;
+          display: flex;
+          align-items: center;
+        }
+    }
+    

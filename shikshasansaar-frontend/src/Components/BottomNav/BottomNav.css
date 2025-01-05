@@ -1,0 +1,49 @@
+.bottom-nav {
+
+    display: none;
+
+  }
+
+  
+  @media screen and (max-width: 480px) {
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #fff;
+      padding: 1vh 1vh;
+      z-index: 1000;
+      height: 8vh;
+      box-shadow: 0px -0.5vh 1vh rgba(0, 0, 0, 0.1); /* Added shadow to the container */
+      border-top: 2px solid orangered;
+      border-bottom: 2px solid orangered;
+    }
+  
+    .bottom-nav-btn {
+      background-color: #fff;
+      border: none;
+      padding: 0;
+      border-radius: 1.5vw;
+      color: #333;
+      font-size: 3vw;
+      font-weight: 700;
+      display: flex;
+      flex-direction: column; /* Ensures the text appears below the icon */
+      align-items: center;
+    }
+  
+    .bottom-nav-btn img {
+      width: 8vw;
+      height: 8vw;
+     
+    }
+  
+    .bottom-nav-btn:hover {
+      background-color: #ddd;
+    }
+  }
+  

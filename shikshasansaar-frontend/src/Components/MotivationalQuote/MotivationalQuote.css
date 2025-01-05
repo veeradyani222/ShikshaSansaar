@@ -1,0 +1,61 @@
+.motivational-container {
+    background: linear-gradient(45deg, #FF6F00, #FF8C00, #FFB74D);
+    width: 100vw;
+    position: relative; /* Positioning for the pseudo-element */
+    overflow: hidden; /* Ensure shine stays within bounds */
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-family: "Poppins", serif;
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.motivational-container:hover {
+    transform: scale(1.05); /* Scale up the container on hover */
+}
+
+.motivational-quote {
+    padding: 2px;
+    background: transparent;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    font-size: 1vw;
+    width: 40vw;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; /* Positioning for the pseudo-element */
+    font-weight: 700;
+    z-index: 1; /* Ensure text is above the background */
+    pointer-events: none; 
+}
+
+.motivational-quote p {
+    margin-top: 1vh;
+}
+
+.motivational-quote h2 {
+    color: black;
+    font-family: "Poppins", serif;
+}
+
+@media screen and (max-width: 480px) {
+    .motivational-container {
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+
+    .motivational-quote {
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        font-size: 1.0vh;
+        width: 70vw;
+    }
+
+    .motivational-quote p {
+        margin-top: 3vh;
+        font-size: 2vh;
+    }
+}

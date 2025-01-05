@@ -1,0 +1,136 @@
+.search {
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+    justify-content: center;
+    align-items: center;}
+
+.search-input {
+    width: 40vw;
+    height:auto;
+    padding: 1vh;
+    text-align: center;
+    font-size: 1.0vw; /* Increase the font size */
+    border: 2px solid black; /* Add border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.search-input:focus {
+    border-color: var(--color3); /* Change border color on focus */
+    outline: none; /* Remove outline */
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    background:transparent;
+    margin: 0 auto;
+
+   
+}
+
+p.no_products_found{
+    font-size: 2vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+}
+
+
+@media screen and (max-width:480px) {
+
+    
+    .search-input {
+        width: 80vw;
+        font-size: 5.5vw; /* Increase the font size */
+    }
+    
+
+    
+    .product-list {
+
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        margin-left: -5vw;
+    
+    }
+    
+    p.no_products_found{
+        font-size: 2vh;
+    
+    }
+    
+    
+   
+    
+    
+    
+    
+}
+
+.search-container {
+    position: relative;
+    width: 100%;
+}
+
+.search-input {
+    width: 104%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.search-results {
+    position: relative;
+    top: 100%;
+    left: 0;
+    width: 110%;
+    max-height:60vh;
+    overflow-y: auto;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    z-index: 10;
+}
+
+.search-result-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+
+.search-result-item:hover {
+    background: #f9f9f9;
+}
+
+.search-result-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.search-result-details h4 {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.search-result-details p {
+    margin: 0;
+    font-size: 12px;
+    color: #777;
+}
+
+.no-results {
+    padding: 10px;
+    text-align: center;
+    color: #888;
+}
+

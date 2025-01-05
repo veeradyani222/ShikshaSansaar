@@ -1,0 +1,127 @@
+.filter-container {
+    background-color: black;
+    color: white;
+    padding: 2vh; /* Replaced fixed padding with relative unit */
+  }
+  
+  .filter-title {
+    text-align: center;
+    font-size: 1.5vw; /* Scaled font-size with vw */
+    color: white;
+    margin-bottom: 2vh; /* Used vh for vertical spacing */
+    font-weight: 700;
+  }
+  
+  .clear-all-button {
+    background-color: orange;
+    color: black;
+    border: none;
+    padding: 0.5vh 0.5vh; /* Responsive padding */
+    border-radius: 0.5vw; /* Responsive border-radius */
+    cursor: pointer;
+    margin-bottom: 1.5vh; /* Responsive bottom margin */
+  }
+  
+  .filter-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single-column layout for small screens */
+    gap: 1vh; /* Responsive gap */
+  }
+  
+  .filter-item h4 {
+    background-color: orangered;
+    color: white;
+    padding: 1.5vh; /* Responsive padding */
+    border-radius: 0.5vw; /* Responsive border-radius */
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5vh;
+  }
+  
+  .radio-buttons,
+  .checkbox-buttons {
+    padding: 2vh; /* Responsive padding */
+    animation: fadeIn 0.3s;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  
+  .radio-label,
+  .checkbox-label {
+    display: block;
+    margin-bottom: 1vh; /* Responsive margin */
+    font-size: 1.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .filter-container input[type='radio'],
+  .filter-container input[type='checkbox'] {
+    margin-right: 1vw; /* Adjust spacing with vw */
+  }
+  
+  /* Style for active (checked) radio buttons and checkboxes */
+  .filter-container input[type='radio']:checked + label,
+  .filter-container input[type='checkbox']:checked + label {
+    color: orangered; /* Change text color when active */
+    font-weight: bold; /* Optional: Make the label bold */
+  }
+  
+  /* Optional: Style the button itself */
+  .filter-container input[type='radio']:checked,
+  .filter-container input[type='checkbox']:checked {
+    accent-color: orangered; /* Change the button itself (modern browsers) */
+  }
+
+  select.sort-dropdown{
+    background-color: orange;
+    color: black;
+    border: none;
+    text-align: center;
+    padding: 0.5vh 0.5vh; /* Responsive padding */
+    border-radius: 0.5vw; /* Responsive border-radius */
+    cursor: pointer;
+    margin-bottom: 0.5vh; /* Responsive bottom margin */
+  }
+
+  .filter-other-btns{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+  }
+
+  .filter-inputs{
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 1vh;
+    text-align: center;
+    color: white;
+    padding: 1vh 1vh;
+    margin-top: 1vh;
+  }
+  
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+@media screen and (max-width:480px){
+  .filter-container {
+    background-color: black;
+    color: white;
+    padding: 2vh;
+    width: 60vw;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+
+}}
+  

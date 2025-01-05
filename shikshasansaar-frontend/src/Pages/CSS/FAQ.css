@@ -1,0 +1,129 @@
+.chatbot-container {
+    display: flex;
+    flex-direction: column;
+    padding: 5vh 5vw;
+    font-family: "Poppins", sans-serif;
+    background-color: white;
+    border-radius: 2vw;
+    box-shadow: 0 0 5vh rgba(0, 0, 0, 0.1);
+}
+
+h1.h2-h2 {
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 2vw;
+    text-align: center;
+    color: #FF6F00;
+    padding: 2vh 0;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+.question-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3vw;
+    margin-top: 3vh;
+    justify-items: center;
+}
+
+.question-button {
+    background-color: #FF8C00;
+    color: white;
+    padding: 2vh 0;
+    width: 35vw;
+    border: none;
+    border-radius: 2vw;
+    font-size: 1.0vw;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.4s ease, transform 0.3s ease;
+    box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.15);
+}
+
+.question-button:hover {
+    background: linear-gradient(45deg, #FF6F00, #FF8C00, #FFB74D);
+    background-size: 200% 100%;
+    animation: shine 2.5s linear infinite;
+    transform: scale(1.05);
+    color: white;
+    box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.25);
+}
+
+.answerbox {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.answer-container {
+    padding: 10vh 5vw;
+    background-color: #FFF;
+    border: 0.5vw solid #FF8C00;
+    border-radius: 3vw;
+    box-shadow: 0 0 5vh rgba(0, 0, 0, 0.1);
+    font-size: 2vw;
+    color: #333;
+}
+
+.answer-container h3 {
+    font-size: 2.5vw;
+    margin-bottom: 2vh;
+    color: #FF6F00;
+}
+
+.answer-container p {
+    font-size: 1.8vw;
+    margin: 0;
+}
+
+@media screen and (max-width: 480px) {
+
+    .chatbot-container {
+        padding: 5vh 4vw;
+        border-radius: 5vw;
+    }
+
+    h2.h2-h2 {
+        font-size: 5vw;
+        padding: 3vh 0;
+    }
+
+    .question-container {
+        grid-template-columns: 1fr;
+        gap: 4vw;
+    }
+
+    .question-button {
+        padding: 2vh;
+        width: 90vw;
+        font-size: 4vw;
+        border-radius: 5vw;
+    }
+
+    .answerbox {
+        height: 70vh;
+    }
+
+    .answer-container {
+        padding: 5vh 4vw;
+        font-size: 3vw;
+    }
+
+    .answer-container h3 {
+        font-size: 3.5vw;
+    }
+
+    .answer-container p {
+        font-size: 3vw;
+    }
+}

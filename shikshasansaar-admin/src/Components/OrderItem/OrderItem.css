@@ -1,0 +1,47 @@
+.order-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 2vh; /* Increased padding for better spacing */
+    margin: 1rem 0;
+    font-family: "poppins",serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    font-size: 1vw; /* Increased font size */
+  }
+  
+  .order-item:hover {
+    transform: scale(1.02);
+  }
+  
+  .order-details {
+    margin-bottom: 1rem;
+    font-size: 1vw; /* Increased font size */
+  }
+  
+  .payment-screenshot {
+    max-width: 10vw; /* Adjusted width for responsiveness */
+    max-height: 10vh; /* Adjusted height for responsiveness */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .payment-screenshot:hover {
+    transform: scale(1.1);
+  }
+  
+  .remove-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 1vh 2vw; /* Increased padding for better clickability */
+    cursor: pointer;
+    font-size: 2vh; /* Increased font size */
+  }
+  
+  .remove-button:hover {
+    background-color: #e60000;
+  }
+  

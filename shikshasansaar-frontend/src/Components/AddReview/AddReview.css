@@ -1,0 +1,116 @@
+/* ReviewForm.css */
+
+.review-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 2vh 4vw;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 1vw;
+  width: 70vw;
+  min-height: 100vh;
+  margin-top: 20vh;
+}
+
+.review-heading {
+  font-size: 2.5vh; /* Adjusted font size for better readability */
+  margin-bottom: 3vh;
+  color: #333;
+  text-align: center;
+  font-weight: 600;
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  max-width: 70vw;
+  background-color: #fff;
+  padding: 3vh 4vw;
+  border-radius: 0.75vw;
+  box-shadow: 0 2vw 2vh rgba(0, 0, 0, 0.1);
+}
+
+.review-input {
+  width: 100%; /* Ensure inputs use full width */
+  padding: 1.2vh 2vw; /* Adjusted padding for better spacing */
+  margin-bottom: 2vh; /* Reduced margin for more compact layout */
+  border: 1px solid #ddd;
+  border-radius: 0.5vw;
+  font-size: 2.5vh; /* Adjusted font size for better fit */
+  background-color: #f8f8f8;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+.review-input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0.5vw rgba(0, 123, 255, 0.5);
+}
+
+.review-textarea {
+  width: 100%; /* Ensure textarea uses full width */
+  height: 15vh; /* Reduced height for better fit */
+  resize: vertical;
+  padding: 1.2vh 2vw; /* Adjusted padding */
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 0.5vw;
+  font-size: 2.5vh;
+  background-color: #f8f8f8;
+}
+
+.review-textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0.5vw rgba(0, 123, 255, 0.5);
+}
+
+.review-submit-button {
+  padding: 1.2vh 2.5vw; /* Adjusted padding */
+  background: linear-gradient(to right, #FFD580, #FF8C00);
+  color: white;
+  border: none;
+  border-radius: 0.5vw;
+  font-size: 2.6vh; /* Adjusted font size */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 0.5vw 1vh rgba(0, 0, 0, 0.1);
+  margin-top: 2vh; /* Added margin-top for spacing */
+}
+
+.review-submit-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-0.5vh);
+}
+
+.review-submit-button:active {
+  background-color: #004494;
+  transform: translateY(0.5vh);
+}
+
+#mainDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#mainDiv ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2vw;
+  list-style-type: none;
+}
+
+#hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
