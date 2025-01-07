@@ -7,8 +7,7 @@
     margin: 5vh 10vh;
 }
 
-@media screen and (max-width:480px) {
-    
+@media screen and (max-width:480px) {  
     .wishlist-items{
         display: grid;
         justify-content: center;
@@ -16,8 +15,5 @@
         grid-template-columns: repeat(2, 1fr); /* 3 columns with equal width */
         gap: 5vw;
         margin-top: 5vh;
-    }
-    
-
-    
+    }    
 }

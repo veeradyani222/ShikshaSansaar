@@ -29,6 +29,7 @@ const Contact = () => {
         ✖ &nbsp; &nbsp; &nbsp;{/* Cross icon */}
       </span>
     </div>
+    
   );
 };
 

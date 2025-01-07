@@ -186,6 +186,9 @@ const Footer = () => {
             <div className="footer-bottom">
                 <p className="footer-text">&copy; {new Date().getFullYear()} PRO-Library. All Rights Reserved.</p>
             </div>
+            <div>
+                Himanshu
+            </div>
         </footer>
     );
 };
