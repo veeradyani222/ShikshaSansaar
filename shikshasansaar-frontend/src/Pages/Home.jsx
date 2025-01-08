@@ -19,37 +19,37 @@ const Home = () => {
   const [loading, setLoading] = useState(true);
   const [Profile, setProfile] = useState(true);
 
-  useEffect(() => {
-      const fetchProfile = async () => {
-        const token = localStorage.getItem('auth-token');
-        if (!token) {
-          // Redirect to login if no token exists
-          window.location.href = '/login';
-          return;
-        }
+  // useEffect(() => {
+  //     const fetchProfile = async () => {
+  //       const token = localStorage.getItem('auth-token');
+  //       if (!token) {
+  //         // Redirect to login if no token exists
+  //         window.location.href = '/login';
+  //         return;
+  //       }
     
-        try {
-          const response = await fetch(`${BACKEND_URL}/profile`, {
-            method: 'GET',
-            headers: { 'auth-token': token },
-          });
+  //       try {
+  //         const response = await fetch(`${BACKEND_URL}/profile`, {
+  //           method: 'GET',
+  //           headers: { 'auth-token': token },
+  //         });
     
-          if (!response.ok) {
-            throw new Error('Failed to fetch user details');
-          }
+  //         if (!response.ok) {
+  //           throw new Error('Failed to fetch user details');
+  //         }
     
-          const data = await response.json();
-          setProfile(data);
+  //         const data = await response.json();
+  //         setProfile(data);
        
-        } catch (err) {
-          console.error(err.message || 'Failed to fetch user details');
-          // Redirect to login if fetching profile fails
-          window.location.href = '/login';
-        }
-      };
+  //       } catch (err) {
+  //         console.error(err.message || 'Failed to fetch user details');
+  //         // Redirect to login if fetching profile fails
+  //         window.location.href = '/login';
+  //       }
+  //     };
     
-      fetchProfile();
-    }, []);
+  //     fetchProfile();
+  //   }, []);
   
 
   useEffect(() => {

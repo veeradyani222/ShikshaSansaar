@@ -116,14 +116,14 @@ li.normal-nav1 a{
   font-weight: 800;
 }
 
-.mobile-login-profile li.login {
+/* .mobile-login-profile li.login {
   border: 2px solid black;
   background-color: white;
   border-radius: 3vh;
   padding: 1vh 1vh;
   font-weight: 400;
   margin-bottom: 10px;
-}
+} */
 
 .cart li.cart {
   font-size: 6vh;
@@ -296,7 +296,7 @@ li.wishlist {
       z-index: 10000;
       
     }
-    .mobile-login-profile {
+    /* .mobile-login-profile {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -314,7 +314,7 @@ li.wishlist {
         gap: 8vw;
 
         
-    }
+    } */
 
     .mobile-login-profile .something{
 margin-right: auto;
