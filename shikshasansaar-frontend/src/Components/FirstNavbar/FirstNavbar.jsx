@@ -3,10 +3,13 @@ import './FirstNavbar.css';
 import { Link, useNavigate } from 'react-router-dom';
 import cart_icon from '../assets/cart_icon.png';
 import heart_icon from '../assets/heart_icon.png';
-import user_icon from '../assets/profile-new.png';
+import { CgMenuGridO } from "react-icons/cg";
+import { FaUser } from "react-icons/fa";
 import logo from '../assets/logo.png';
 import { ShopContext } from '../../Context/ShopContext';
 import ProductItemProductDisplay from './../ProductItemProductDisplay/ProductItemProductDisplay';
+import { FaWandMagicSparkles } from "react-icons/fa6";
+import { FaBell } from "react-icons/fa";
 
 const FirstNavbar = () => {
     const { getTotalCartCount, getTotalWishlistCount } = useContext(ShopContext);
@@ -48,7 +51,7 @@ const FirstNavbar = () => {
     const handleSearch = (e) => {
         const value = e.target.value.trim().replace(/\s+/g, ''); // Remove all spaces from the search term
         setSearchTerm(value);
-    
+
         if (value) {
             const results = allProducts.filter((product) => {
                 const nameMatch = product.name?.replace(/\s+/g, '').includes(value); // Remove spaces from name
@@ -57,14 +60,14 @@ const FirstNavbar = () => {
                 const lecturerMatch = product.lecturer?.replace(/\s+/g, '').includes(value); // Remove spaces from lecturer
                 const facultyMatch = product.faculty?.replace(/\s+/g, '').includes(value); // Remove spaces from faculty
                 const subjectSetMatch = product.subjectSet?.replace(/\s+/g, '').includes(value); // Remove spaces from subject set
-    
+
                 // Normalize tag field
                 const tagMatch = product.tag
                     ?.toLowerCase()
                     .split('/')
                     .map(tag => tag.trim().replace(/\s+/g, '')) // Remove spaces from each tag
                     .some(tag => tag.includes(value)); // Check if any normalized tag matches the search term
-    
+
                 return nameMatch || categoryMatch || subcategoryMatch || lecturerMatch || facultyMatch || subjectSetMatch || tagMatch;
             });
             setFilteredProducts(results);
@@ -74,57 +77,75 @@ const FirstNavbar = () => {
             setIsSearchVisible(false); // Hide results if search is empty
         }
     };
-    
+
     const handleProductClick = () => {
         setSearchTerm('');  // Clear search input
         setFilteredProducts([]);  // Clear filtered results
         setIsSearchVisible(false);  // Hide search results box
     };
-    
+
+    // Add new state for dropdown
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
     return (
-        <div className='firstnav'>
-            <nav>
-                {/* Logo */}
-                <div className="logo" onClick={() => navigate('/')}>
-                    <img className='logo-img' src={logo} alt="Logo" />
+        <div >
+            <nav className='firstnav'>
+                <div className="logo">
+                    <img src={logo} alt="logo" className="nav-logo-img" />
+                </div>
+                <div className="nav-dropdown">
+                    <select className="simple-dropdown">
+                        <option value="">Choose your city and goal</option>
+                        <optgroup label="Delhi">
+                            <option value="delhi-jee">JEE Preparation</option>
+                            <option value="delhi-neet">NEET Preparation</option>
+                            <option value="delhi-upsc">UPSC Preparation</option>
+                        </optgroup>
+                        <optgroup label="Mumbai">
+                            <option value="mumbai-jee">JEE Preparation</option>
+                            <option value="mumbai-neet">NEET Preparation</option>
+                            <option value="mumbai-upsc">UPSC Preparation</option>
+                        </optgroup>
+                        <optgroup label="Bangalore">
+                            <option value="bangalore-jee">JEE Preparation</option>
+                            <option value="bangalore-neet">NEET Preparation</option>
+                            <option value="bangalore-upsc">UPSC Preparation</option>
+                        </optgroup>
+                    </select>
                 </div>
 
-                {/* Search Input */}
-                <div className="search-bar-first">
-                    <input
-                        type="text"
-                        placeholder="Search products by name, subject, faculty..."
-                        value={searchTerm}
+                <div className="nav-search">
+                    <input type="text"
+                        placeholder="Search for products"
+                        className="nav-search-input"
                         onChange={handleSearch}
-                        className="search-input-first"
-                    />
+                        value={searchTerm} />
+                </div>
+                <div className="nav-review">
+                    <div className="review">
+                        <div className="review-icon">
+                            <FaWandMagicSparkles />
+                        </div>
+                        <span>Give a Review</span>
+                    </div>
                 </div>
 
-                {/* Profile, Wishlist, and Cart Icons */}
-                <div className="login-profile">
-                    {localStorage.getItem('auth-token') ? (
-                        <li className='login' onClick={() => setIsLogoutModalOpen(true)}>Logout</li>
-                    ) : (
-                        <Link to="/login">
-                            <li className='login'>Login</li>
-                        </Link>
-                    )}
-                    <div className="cart profile" onClick={() => checkAuthentication('/profile')}>
-                        <li className='profile'>
-                            <img src={user_icon} alt="Profile" />
-                        </li>
+                <div className="nav-notification nav-user nav-men">
+                    <div className="notification">
+                        <div className="notification-icon">
+                            <FaBell />
+                        </div>
+
                     </div>
-                    <div className="cart" onClick={() => checkAuthentication('/wishlist')}>
-                        <div className="cart-wishlist-number">{totalWishlistItems}</div>
-                        <li className='wishlist'>
-                            <img src={heart_icon} alt="Wishlist" />
-                        </li>
+                    <div className="user">
+                        <div className="user-icon">
+                            <FaUser />
+                        </div>
                     </div>
-                    <div className="cart shopcart" onClick={() => checkAuthentication('/cart')}>
-                        <div className="cart-cart-number">{totalCartItems}</div>
-                        <li className='cart shopcart'>
-                            <img src={cart_icon} alt="Cart" />
-                        </li>
+                    <div className="menu">
+                        <div className="menu-icon">
+                            <CgMenuGridO />
+                        </div>
                     </div>
                 </div>
             </nav>
