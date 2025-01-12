@@ -215,9 +215,8 @@
 }
 
 .notification-icon {
-  font-size: 1.5rem;
-  position: relative;
-  top: 2px;
+  font-size: 1rem;
+
 }
 
 .nav-user {
@@ -242,9 +241,7 @@
   }
   
   .user-icon {
-    font-size: 1.5rem;
-    position: relative;
-    top: 2px;
+    font-size: 1rem;
   }
 
 .nav-menu {
@@ -271,10 +268,8 @@
     justify-content: center;
   }
   
-  .notification-menu {
-    font-size: 1.5rem;
-    position: relative;
-    top: 2px;
+  .menu-icon {
+    font-size: 1.1rem;
   }
 
 .menu:hover {

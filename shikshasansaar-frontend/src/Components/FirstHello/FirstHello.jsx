@@ -16,7 +16,7 @@ const FirstHello = () => {
         setError('Please log in to perform this action.');
         return;
       }
-
+      
       try {
         const response = await fetch(`${BACKEND_URL}/profile`, {
           method: 'GET',
@@ -26,7 +26,6 @@ const FirstHello = () => {
         if (!response.ok) {
           throw new Error('Failed to fetch user details');
         }
-
         const data = await response.json();
         setProfile(data);
       } catch (err) {
@@ -42,14 +41,14 @@ const FirstHello = () => {
       {error || !profile ? (
         <>
           <h1 className="greeting">Hello User! What are you looking for?</h1>
-          
-          <BottomLine/>
+
+          <BottomLine />
           <Categories />
         </>
       ) : (
         <>
           <h1 className="greeting">Hello {profile.first_name}! What are you looking for?</h1>
-          <BottomLine/>
+          <BottomLine />
           <div className="search-container">
             <Categories />
           </div>

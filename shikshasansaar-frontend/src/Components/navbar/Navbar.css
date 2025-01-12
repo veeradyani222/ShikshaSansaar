@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+
 .logo {
   justify-content: center;
   align-items: center;
@@ -22,19 +26,19 @@ nav {
 /* Nav content styling */
 .nav-content {
   display: flex;
-  justify-content:center;
-  gap: 3vw;
+  justify-content:left;
+  gap: 5px;
   align-items: center;
   list-style-type: none;
   margin-left: 0;
-  font-family: "Poppins", serif;
+  font-family: "Lato", serif;
   text-transform: uppercase;
   font-size: 1.5vh;
   font-weight: 600;
   cursor: pointer;
   width: 100vw;
   height: 6vh;
-  background-color: darkblue;
+  background-color: transparent;
   color: white;
 }
 
@@ -43,11 +47,11 @@ nav {
 }
 
 li.normal-nav a{
-  color: white
+  color: black
 }
 
 li.normal-nav{
-  color: white;
+  color: black;
 }
 
 li.normal-nav1 a{
@@ -93,6 +97,7 @@ li.normal-nav1 a{
   background: linear-gradient(45deg, #FF6F00, #FF8C00, #FFB74D);
   color: black; /* Optional: change text color for better visibility */
   border: 1px solid black;
+  border-radius: 10px;
 }
 
 .highlighted:hover {

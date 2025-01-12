@@ -93,26 +93,8 @@ const FirstNavbar = () => {
                 <div className="logo">
                     <img src={logo} alt="logo" className="nav-logo-img" />
                 </div>
-                <div className="nav-dropdown">
-                    <select className="simple-dropdown">
-                        <option value="">Choose your city and goal</option>
-                        <optgroup label="Delhi">
-                            <option value="delhi-jee">JEE Preparation</option>
-                            <option value="delhi-neet">NEET Preparation</option>
-                            <option value="delhi-upsc">UPSC Preparation</option>
-                        </optgroup>
-                        <optgroup label="Mumbai">
-                            <option value="mumbai-jee">JEE Preparation</option>
-                            <option value="mumbai-neet">NEET Preparation</option>
-                            <option value="mumbai-upsc">UPSC Preparation</option>
-                        </optgroup>
-                        <optgroup label="Bangalore">
-                            <option value="bangalore-jee">JEE Preparation</option>
-                            <option value="bangalore-neet">NEET Preparation</option>
-                            <option value="bangalore-upsc">UPSC Preparation</option>
-                        </optgroup>
-                    </select>
-                </div>
+
+
 
                 <div className="nav-search">
                     <input type="text"
